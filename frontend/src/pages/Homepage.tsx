@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 const Homepage = () => {
     return (
-        <div className="border-2 border-green-500 flex flex-col gap-12 py-12">
+        <div className="flex flex-col gap-12 py-12">
             <h1 className="text-4xl">Discover the essence of Pearl, a free Framer template.<span className="text-gray-400"> Let's shape your brand into a masterpiece together.</span></h1>
 
             <div>
