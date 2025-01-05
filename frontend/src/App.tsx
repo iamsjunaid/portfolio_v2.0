@@ -9,7 +9,7 @@ function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='flex flex-col gap-16 mx-6'>
+    <div className='flex flex-col gap-24 mx-6 sm:mx-16'>
       <Navbar />
       <Homepage />
       <Work />

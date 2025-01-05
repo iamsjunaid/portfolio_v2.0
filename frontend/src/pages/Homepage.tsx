@@ -1,10 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { ArrowUpRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const Homepage = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Trigger the animation after the component mounts
+        setIsLoaded(true);
+    }, []);
     return (
-        <div className="flex flex-col gap-12 py-12">
-            <h1 className="text-4xl">Discover the essence of Pearl, a free Framer template.<span className="text-gray-400"> Let's shape your brand into a masterpiece together.</span></h1>
+        <div className={`flex flex-col gap-12 py-12 duration-1000 ease-in-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`}>
+            <h1 className="text-4xl sm:text-6xl">Discover the essence of Pearl, a free Framer template.<span className="text-gray-400"> Let's shape your brand into a masterpiece together.</span></h1>
 
             <div>
                 <Button asChild className='bg-gray-900 text-white text-lg rounded-full px-12 py-6 hover:text-gray-950'>
