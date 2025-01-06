@@ -1,36 +1,62 @@
 import { useEffect, useState } from 'react';
+import { ArrowRight } from 'lucide-react';
+
 import projects from '../lib/projects.json';
+import { Project } from '../lib/types';
+import ProjectCard from '@/components/ProjectCard';
 
 const Work = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
-    // Trigger the animation after the component mounts
     setIsLoaded(true);
-    
   }, []);
-  
-  console.log(isLoaded);
-  const projectList = projects.map((project) => (
-    <div key={project.title} className='flex flex-col gap-4'>
-      <h2 className='text-2xl font-bold'>{project.title}</h2>
-      <img
-        src={project.img}
-        alt={project.title}
-        className='w-64 h-40 object-cover'
-      />
-      <p>{project.desc}</p>
-      <a href={project.live} target='_blank' rel='noreferrer'>{project.live}</a>
+
+  const handleButtonClick = (project: Project) => {
+    setSelectedProject(project);
+  };
+
+  const closeModal = () => {
+    setSelectedProject(null);
+  };
+
+  const projectList = projects.map((project: Project) => (
+    <div
+      key={project.title}
+      className='flex flex-col items-center p-4 gap-8'
+    >
+      <div className='relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:p-8 mx-4 w-3/4'>
+        {/* Project Image */}
+        <img
+          src={project.img}
+          alt={project.title}
+          className='sm:w-3/4 sm:h-1/2 mx-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110'
+        />
+
+        {/* Hover Button */}
+        <div
+          className='absolute bottom-4 left-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer hover:bg-white hover:text-gray-900'
+          onClick={() => handleButtonClick(project)}
+        >
+          <ArrowRight className='w-6 h-6' />
+        </div>
+      </div>
+      <h2 className='text-3xl'>{project.title}</h2>
     </div>
   ));
 
   return (
     <div
-      className={`transition-opacity duration-1000 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'
+      className={`border border-red-500 transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
-      <h1 className='text-4xl font-bold'>Work</h1>
       {projectList}
+
+      {/* Popup Modal */}
+      {selectedProject && (
+        <ProjectCard selectedProject={selectedProject} closeModal={closeModal} />
+      )}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 [  
   {
   "img": "/images/kudospot.png",
-  "title": "Kudo Spot",
+  "title": "Kudospot",
   "desc": "Kudospot is a platform for team members to send and receive badges of appreciation. It features: 1. Sending kudos with badges and messages.2. Viewing analytics and leaderboard. 3. Displaying the most liked post.",
   "techs": [
     "ReactJS",
