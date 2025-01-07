@@ -26,11 +26,10 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
                         />
                     </div>
 
-                    <div className='flex flex-wrap gap-2 items-center border-b-2'>
+                    <div className='flex flex-wrap gap-2 items-center'>
                         {selectedProject.techs.map((tech: string, index: number) => (
-                            <span key={index} className='text-sm text-gray-700'>
+                            <span key={index} className='text-xs text-white bg-gray-400 p-1 rounded'>
                                 {tech}
-                                {index < selectedProject.techs.length - 1 && <span className='mx-1'>•</span>}
                             </span>
                         ))}
                     </div>
