@@ -26,20 +26,20 @@ const Work = () => {
       key={project.title}
       className='flex flex-col items-center p-4 gap-8'
     >
-      <div className='relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:p-8 mx-4 w-3/4'>
+      <div className='relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:px-16 mx-4 w-11/12 h-11/12'>
         {/* Project Image */}
         <img
           src={project.img}
           alt={project.title}
-          className='sm:w-3/4 sm:h-1/2 mx-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-110'
+          className='sm:w-4/5 sm:h-11/12 mx-auto object-cover rounded-xl transition-transform duration-300 ease-in-out transform group-hover:brightness-50'
         />
 
         {/* Hover Button */}
         <div
-          className='absolute bottom-4 left-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer hover:bg-white hover:text-gray-900'
+          className='absolute bottom-4 left-4 flex items-center justify-center sm:w-12 sm:h-12 w-8 h-8 rounded-full bg-gray-900 text-white group-hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer hover:bg-white hover:text-gray-900'
           onClick={() => handleButtonClick(project)}
         >
-          <ArrowRight className='w-6 h-6' />
+          <ArrowRight className='sm:w-6 sm:h-6 w-4 h-4' />
         </div>
       </div>
       <h2 className='text-3xl'>{project.title}</h2>
