@@ -9,7 +9,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex justify-between items-center h-[64px] py-4 bg-white">
+        <nav className="flex justify-between items-center h-[64px] py-4 bg-white mx-6 sm:mx-16">
             {/* Logo Section */}
             <div className="text-2xl font-bold">Logo</div>
 

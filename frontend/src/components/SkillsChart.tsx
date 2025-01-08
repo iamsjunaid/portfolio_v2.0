@@ -24,9 +24,9 @@ export default function SkillsChart() {
     }, []);
 
     return (
-        <div className="max-w-6xl mx-auto mt-24 p-4">
-            <h2 className="text-3xl mb-6 text-center">An overview of my skillset</h2>
-            <div className="flex flex-wrap gap-6 justify-center">
+        <div className="flex flex-col ">
+            <p className="text-md my-12 text-left ">Tech  ·  Skills</p>
+            <div className="flex flex-wrap gap-6">
                 {skills.map((skill) => (
                     <div
                         key={skill.name}

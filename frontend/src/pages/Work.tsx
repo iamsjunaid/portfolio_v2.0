@@ -47,7 +47,7 @@ const Work = () => {
   ));
 
   return (
-    <div
+    <section
       className={`border border-red-500 transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
@@ -57,7 +57,7 @@ const Work = () => {
       {selectedProject && (
         <ProjectCard selectedProject={selectedProject} closeModal={closeModal} />
       )}
-    </div>
+    </section>
   );
 };
 

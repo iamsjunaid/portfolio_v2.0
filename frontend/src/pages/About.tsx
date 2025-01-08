@@ -14,7 +14,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className={`sm:h-screen flex flex-col justify-between items-baseline py-24 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`}>
+        <section className={`mx-6 sm:mx-16 border border-red-500 flex flex-col justify-between items-baseline py-24 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`}>
             <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
                 <p className="text-3xl sm:text-5xl sm:w-2/3">
                     See how we've turned ideas into reality.
@@ -32,7 +32,7 @@ const About = () => {
             <div className="w-full">
                 <SkillsChart />
             </div>
-        </div>
+        </section>
     )
 }
 
