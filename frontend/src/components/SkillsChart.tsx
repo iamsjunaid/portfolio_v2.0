@@ -35,7 +35,7 @@ export default function SkillsChart() {
                         <span className="font-medium mb-2">{skill.name}</span>
                         <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
                             <div
-                                className="h-4 rounded-full bg-gray-950 transition-all duration-[4000ms] ease-in-out"
+                                className="h-4 rounded-full bg-gray-950 transition-all duration-&lsqb;2000ms&rsqb; ease-in-out"
                                 style={{
                                     width: animate ? `${skill.level}%` : '0%',
                                 }}

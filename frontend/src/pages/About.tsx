@@ -1,18 +1,20 @@
-import { ArrowRight, ChevronDown, ChevronRight } from "lucide-react"
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "@/components/ui/accordion"
+import React, { useEffect, useState } from "react"
+
+import { ArrowRight } from "lucide-react"
 
 import SkillsChart from "@/components/SkillsChart"
 
 import { Button } from "@/components/ui/button"
 
 const About = () => {
+    const [loaded, setLoaded] = useState(false);
+
+    useEffect(() => {
+        setLoaded(true);
+    }, []);
+
     return (
-        <div className="sm:h-screen flex flex-col justify-between items-baseline py-24">
+        <div className={`sm:h-screen flex flex-col justify-between items-baseline py-24 ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`}>
             <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
                 <p className="text-3xl sm:text-5xl sm:w-2/3">
                     See how we've turned ideas into reality.
@@ -28,14 +30,6 @@ const About = () => {
                 </Button>
             </div>
             <div className="w-full">
-                {/* <Accordion type="single" collapsible>
-                    <AccordionItem value="item-1">
-                        <AccordionTrigger className="text-2xl">Is it accessible?</AccordionTrigger>
-                        <AccordionContent className="text-lg">
-                            Yes. It adheres to the WAI-ARIA design pattern.
-                        </AccordionContent>
-                    </AccordionItem>
-                </Accordion> */}
                 <SkillsChart />
             </div>
         </div>
