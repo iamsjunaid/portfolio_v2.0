@@ -30,7 +30,7 @@ export default function SkillsChart() {
                 {skills.map((skill) => (
                     <div
                         key={skill.name}
-                        className="w-full sm:w-40 flex flex-col items-center"
+                        className="w-full sm:w-40 flex flex-col items-start"
                     >
                         <span className="font-medium mb-2">{skill.name}</span>
                         <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
