@@ -47,8 +47,8 @@ const Work = () => {
   ));
 
   return (
-    <section
-      className={`border border-red-500 transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
+    <section id='projects'
+      className={`transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
       {projectList}

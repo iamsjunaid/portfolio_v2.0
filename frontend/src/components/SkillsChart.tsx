@@ -24,13 +24,13 @@ export default function SkillsChart() {
     }, []);
 
     return (
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
             <p className="text-md my-12 text-left ">Tech  ·  Skills</p>
             <div className="flex flex-wrap gap-6">
                 {skills.map((skill) => (
                     <div
                         key={skill.name}
-                        className="w-40 flex flex-col items-center"
+                        className="w-full sm:w-40 flex flex-col items-center"
                     >
                         <span className="font-medium mb-2">{skill.name}</span>
                         <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
