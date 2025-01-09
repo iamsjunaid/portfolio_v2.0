@@ -50,7 +50,7 @@ const Navbar = () => {
                     text-lg font-semibold z-50 transition-transform duration-300 sm:hidden
                     ${navbarVisibility ? 'translate-y-16' : '-translate-y-full'}`}
             >
-                <a href="#projects" onClick={handleMenuClick} className="hover:text-blue-500">Projects</a>
+                <a href="#projects" onClick={handleMenuClick} className="hover:text-blue-500">Work</a>
                 <a href="#about" onClick={handleMenuClick} className="hover:text-blue-500">About</a>
                 <a href="#contact" onClick={handleMenuClick} className="hover:text-blue-500">Contact</a>
             </div>
