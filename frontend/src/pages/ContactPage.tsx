@@ -8,24 +8,24 @@ const ContactPage = () => {
   return (
     <section className="bg-black text-white h-full rounded-tr-[8rem] p-16" id="contact">
       <p>Contact</p>
-      <div className="w-full sm:flex justify-around my-4">
+      <div className="w-full sm:flex justify-between sm:justify-around my-4">
 
         <ContactForm />
         <div className="flex justify-around mt-8 w-full sm:w-3/4 sm:px-16">
-          <ul className="flex flex-col gap-2 text-lg">
+          <ul className="flex flex-col gap-2">
             <li>
               <Button variant="link" asChild>
-                <a href="#home" className='text-[1rem]'>Home</a>
+                <a href="#home" className="text-xl" >Home</a>
               </Button>
             </li>
             <li>
               <Button variant="link" asChild>
-                <a href="#projects" className='text-[1rem]'>Work</a>
+                <a href="#projects" className="text-xl" >Work</a>
               </Button>
             </li>
             <li>
               <Button variant="link" asChild>
-                <a href="#about" className='text-[1rem]'>About</a>
+                <a href="#about" className="text-xl" >About</a>
               </Button>
             </li>
           </ul>
@@ -33,12 +33,12 @@ const ContactPage = () => {
 
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-2  group">
-              <Button variant="link" className='text-[1rem]'><a href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
+              <Button variant="link" ><a className="text-xl"  href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
               </Button>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
             </li>
             <li className="flex items-center gap-2  group">
-              <Button variant="link" className='text-[1rem]'><a href="https://github.com/iamsjunaid">Github</a></Button>
+              <Button variant="link"><a className="text-xl"  href="https://github.com/iamsjunaid">GitHub</a></Button>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
             </li>
           </ul>
