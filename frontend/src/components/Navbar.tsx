@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { AlignRight, X } from 'lucide-react';
+import { Button } from './ui/button';
+
+import logo from '../assets/portfolio-logo.png';
 
 const Navbar = () => {
     const [navbarVisibility, setNavbarVisibility] = useState(false);
@@ -11,18 +14,24 @@ const Navbar = () => {
     return (
         <nav className="flex justify-between items-center h-[64px] py-4 bg-white mx-6 sm:mx-16">
             {/* Logo Section */}
-            <div className="text-2xl font-bold">Logo</div>
+            <div className="text-2xl font-bold"><img src={logo} className='w-32 h-32'/></div>
 
             {/* Navbar Links (Desktop View) */}
             <ul className="hidden sm:flex space-x-8">
                 <li>
-                    <a href="#projects" className="hover:text-blue-500">Projects</a>
+                    <Button variant="link" asChild>
+                        <a href="#projects" className='text-[1rem]'>Work</a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#about" className="hover:text-blue-500">About</a>
+                    <Button variant="link" asChild>
+                        <a href="#about" className='text-[1rem]'>About</a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#contact" className="hover:text-blue-500">Contact</a>
+                    <Button variant="link" asChild>
+                        <a href="#contact" className='text-[1rem]'>Contact</a>
+                    </Button>
                 </li>
             </ul>
 

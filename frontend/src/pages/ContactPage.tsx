@@ -11,27 +11,34 @@ const ContactPage = () => {
       <div className="w-full sm:flex justify-around my-4">
 
         <ContactForm />
-        <div className="flex justify-around mt-8 w-full sm:w-3/4">
+        <div className="flex justify-around mt-8 w-full sm:w-3/4 sm:px-16">
           <ul className="flex flex-col gap-2 text-lg">
             <li>
-              <a href="#home" className="hover:text-blue-500">Home</a>
+              <Button variant="link" asChild>
+                <a href="#home" className='text-[1rem]'>Home</a>
+              </Button>
             </li>
             <li>
-              <a href="#projects" className="hover:text-blue-500">Work</a>
+              <Button variant="link" asChild>
+                <a href="#projects" className='text-[1rem]'>Work</a>
+              </Button>
             </li>
             <li>
-              <a href="#about" className="hover:text-blue-500">About</a>
+              <Button variant="link" asChild>
+                <a href="#about" className='text-[1rem]'>About</a>
+              </Button>
             </li>
           </ul>
 
+
           <ul className="flex flex-col gap-2">
             <li className="flex items-center gap-2  group">
-              <Button variant="link" className="text-lg"><a href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
+              <Button variant="link" className='text-[1rem]'><a href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
               </Button>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
             </li>
             <li className="flex items-center gap-2  group">
-              <Button variant="link" className="text-lg"><a href="https://github.com/iamsjunaid">Github</a></Button>
+              <Button variant="link" className='text-[1rem]'><a href="https://github.com/iamsjunaid">Github</a></Button>
               <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
             </li>
           </ul>
@@ -41,7 +48,7 @@ const ContactPage = () => {
       </div>
       <footer className=" text-white py-4 text-left mt-8">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Junaid Ahmed. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Junaid Syed. All Rights Reserved.
         </p>
       </footer>
 

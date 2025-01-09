@@ -42,7 +42,7 @@ const Work = () => {
           <ArrowRight className='sm:w-6 sm:h-6 w-4 h-4' />
         </div>
       </div>
-      <h2 className='text-3xl'>{project.title}</h2>
+      <h2 className='text-xl'>{project.title}</h2>
     </div>
   ));
 
@@ -51,6 +51,9 @@ const Work = () => {
       className={`transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
+      <p className="text-md text-left ml-8 sm:ml-16 my-12">Tech       <span className='mx-4'>
+        ·
+      </span>Projects</p>
       {projectList}
 
       {/* Popup Modal */}

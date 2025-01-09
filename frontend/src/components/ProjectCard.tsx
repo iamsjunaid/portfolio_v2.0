@@ -28,7 +28,7 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
 
                     <div className='flex flex-wrap gap-2 items-center'>
                         {selectedProject.techs.map((tech: string, index: number) => (
-                            <span key={index} className='text-xs text-white bg-gray-400 p-1 rounded'>
+                            <span key={index} className='text-xs text-white bg-gray-950 p-1 rounded'>
                                 {tech}
                             </span>
                         ))}
@@ -37,6 +37,7 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
                     <p className='text-md'>{selectedProject.desc}</p>
                     <div className='flex justify-between'>
                         <Button
+                            className='rounded-xl hover:bg-black hover:text-white'
                             variant="outline"
                             asChild
                         >
@@ -45,6 +46,7 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
                             </a>
                         </Button>
                         <Button
+                            className='rounded-xl hover:bg-black hover:text-white'
                             variant="outline"
                             asChild
                         >

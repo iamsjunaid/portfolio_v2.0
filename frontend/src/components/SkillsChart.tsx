@@ -25,7 +25,9 @@ export default function SkillsChart() {
 
     return (
         <div className="flex flex-col">
-            <p className="text-md my-12 text-left ">Tech  ·  Skills</p>
+            <p className="text-md mt-16 mb-8 text-left ">Tech                <span className='mx-4'>
+                ·
+            </span>Skills</p>
             <div className="flex flex-wrap gap-6">
                 {skills.map((skill) => (
                     <div
