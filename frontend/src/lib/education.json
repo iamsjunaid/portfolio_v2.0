@@ -1,0 +1,17 @@
+[
+    {
+      "degree": "Full Stack Web Development",
+      "duration": "Mar 2023 - Dec 2023",
+      "institution": "Microverse",
+      "instituteURL": "https://www.microverse.org/",
+      "description": "Mastered algorithms, data structures, and full-stack development with Ruby, Rails, JavaScript, React, and Redux. Developed remote collaboration skills using GitHub and daily standups."
+    },
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "duration": "Aug 2015 - June 2019",
+      "institution": "Dr Babasaheb Ambedkar Marathwada University",
+      "instituteURL": "http://www.bamu.ac.in/",
+      "description": "Studied Data Structures, Algorithms, Databases, Networking, Computer Architecture, and Web Development."
+    }
+  ]
+  
