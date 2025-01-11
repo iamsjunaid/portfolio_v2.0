@@ -7,6 +7,7 @@ import './App.css'
 import About from './pages/About'
 
 import ContactPage from './pages/ContactPage'
+import Experience from './pages/Experience'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
     <div className='flex flex-col gap-4'>
       <Navbar />
       <Homepage />
+      <Experience />
       <Work />
       <About />
       <ContactPage />
