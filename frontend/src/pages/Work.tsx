@@ -28,7 +28,7 @@ const Work = () => {
           key={project.title}
           className="flex flex-col items-center p-4"
         >
-          <div className="relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:px-16 w-full h-full border border-red-500">
+          <div className="relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:px-16 w-full h-full">
             {/* Project Image */}
             <img
               src={project.img}
