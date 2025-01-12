@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 import SkillsChart from "@/components/SkillsChart"
 
@@ -22,7 +22,7 @@ const About = () => {
                 <Button asChild className="bg-gray-300 text-black text-lg rounded-full px-8 py-2 sm:px-20 sm:py-6 hover:text-gray-950 hover:border hover:border-gray-950 w-1/2 sm:w-1/4 transition-transform duration-300 ease-in-out">
                     <a href="https://drive.google.com/file/d/1cZ7ykcpj5RER1zL_0XpxJXOqekF6h6tu/view?usp=sharing" className="flex items-center gap-2 group" target="_blank">
                         <span>My Resume</span>
-                        <ArrowRight className="w-12 h-12 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
+                        <ArrowUpRight className="w-12 h-12 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
                     </a>
                 </Button>
             </div>
