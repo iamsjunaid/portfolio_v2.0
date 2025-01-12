@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 import ContactForm from "@/components/ContactForm"
 
@@ -35,11 +35,11 @@ const ContactPage = () => {
             <li className="flex items-center gap-2  group">
               <Button variant="link" ><a className="text-xl"  href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
               </Button>
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
+              <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
             <li className="flex items-center gap-2  group">
               <Button variant="link"><a className="text-xl"  href="https://github.com/iamsjunaid">GitHub</a></Button>
-              <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:-rotate-45" />
+              <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
           </ul>
         </div>
