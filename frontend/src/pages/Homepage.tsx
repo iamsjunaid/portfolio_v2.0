@@ -11,7 +11,7 @@ const Homepage = () => {
     }, []);
 
     return (
-        <section className={` mx-6 sm:mx-16 self-center py-12 sm:py-24 flex flex-col gap-16 duration-1000 ease-in-out h-screen  ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`} id='home'>
+        <section className={` mx-6 sm:mx-16 self-center py-12 sm:py-16 flex flex-col gap-24 duration-1000 ease-in-out  my-12 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`} id='home'>
             <p className="text-md text-left">
                 Home
                 <span className='mx-4'>
