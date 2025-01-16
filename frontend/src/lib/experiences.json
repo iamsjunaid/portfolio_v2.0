@@ -1,15 +1,15 @@
 [
   {
     "role": "Full Stack Developer",
-    "duration": "Mar 2024 - June 2024",
+    "duration": "Mar 24 - June 24",
     "company": "Explorator Labs",
     "companyURL": "https://exploratorlabs.com/",
     "location": "Ontario, Canada (Remote)",
-    "description": "Enhanced software with Ruby on Rails and ReactJS, reducing downtime by 30%. Delivered full-stack features on tight deadlines. Improved code quality and user experience, reducing bugs by 20%. Skills: ReactJS, Ruby on Rails, PostgreSQL, Cypress, HTML, CSS, GitHub, CI/CD. Left due to budget cuts."
+    "description": "Enhanced software with Ruby on Rails and ReactJS, reducing downtime by 30%. Delivered full-stack features on tight deadlines. Improved code quality and user experience, reducing bugs by 20%. Skills: ReactJS, Ruby on Rails, PostgreSQL, Cypress, HTML, CSS, GitHub, CI/CD."
 },
 {
     "role": "Mentor | Code Reviewer",
-    "duration": "Apr 2023 - Dec 2023",
+    "duration": "Apr 23 - Dec 23",
     "company": "Microverse",
     "companyURL": "https://www.microverse.org/",
     "location": "California, USA (Remote)",
@@ -17,7 +17,7 @@
 },
 {
     "role": "Junior Developer",
-    "duration": "July 2022 - Dec 2022",
+    "duration": "July 22 - Dec 22",
     "company": "Wem Apac",
     "companyURL": "https://wem.io/",
     "location": "Pune, India (Remote)",
