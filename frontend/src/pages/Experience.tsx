@@ -14,13 +14,13 @@ const Experience = () => {
                 </span>
                 Journey
             </p>
-            <div className='sm:flex justify-around h-full gap-8'>
+            <div className='sm:flex justify-around w-full h-full gap-8'>
 
                 {/* Experience Section */}
-                <div className='flex flex-col gap-4 sm:w-1/2 w-full px-2'>
+                <div className='flex flex-col gap-4 w-full px-2'>
                     <h1 className='text-4xl mb-4'>Experience</h1>
-                    {experiences.map((exp) => (
-                        <ExperienceItem key={exp.role} exp={exp}/>
+                    {experiences.map((exp, index) => (
+                        <ExperienceItem index={index} key={exp.role} exp={exp}/>
                     ))}
                 </div>
 
