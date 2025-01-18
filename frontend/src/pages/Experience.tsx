@@ -6,7 +6,7 @@ import ExperienceItem from '@/components/ExperienceItem';
 const Experience = () => {
 
     return (
-        <section className='bg-black text-white rounded-tl-[8rem] px-4 py-16 sm:p-20 flex flex-col gap-12'>
+        <section className='bg-black text-white rounded-tl-[8rem] px-4 py-16 sm:p-20 flex flex-col gap-12' id="experience">
             <p className="text-md text-left mt-4 ml-2">
                 Career
                 <span className='mx-4'>

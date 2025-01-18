@@ -51,7 +51,7 @@ const Work = () => {
   );
 
   return (
-    <section id='projects'
+    <section id='work'
       className={`transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
