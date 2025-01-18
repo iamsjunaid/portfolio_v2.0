@@ -47,7 +47,7 @@ const ContactPage = () => {
 
       </div>
       <footer className=" text-white py-4 text-left mt-8">
-        <p className="text-sm">
+        <p className="text-xs">
           &copy; {new Date().getFullYear()} Junaid Syed. All Rights Reserved.
         </p>
       </footer>

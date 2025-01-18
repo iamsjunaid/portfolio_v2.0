@@ -14,7 +14,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className="my-16">
+        <section className="my-16 sm:h-screen h-auto">
 
             <div className="flex flex-col py-8 sm:flex-row gap-8 items-start sm:items-center bg-black">
 
