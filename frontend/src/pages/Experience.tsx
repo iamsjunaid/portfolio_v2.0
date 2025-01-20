@@ -18,7 +18,6 @@ const Experience = () => {
 
                 {/* Experience Section */}
                 <div className='flex flex-col gap-4 w-full px-2'>
-                    <h1 className='text-4xl mb-4'>Experience</h1>
                     {experiences.map((exp, index) => (
                         <ExperienceItem index={index} key={exp.role} exp={exp}/>
                     ))}
