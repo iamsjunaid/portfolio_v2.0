@@ -2,7 +2,7 @@
   {
   "img": "/images/kudospot.png",
   "title": "Kudospot",
-  "desc": "Kudospot is a platform for team members to send and receive badges of appreciation. It features: 1. Sending kudos with badges and messages.2. Viewing analytics and leaderboard. 3. Displaying the most liked post.",
+  "desc": "Kudospot is a platform designed to foster team collaboration and appreciation. It allows team members to send and receive kudos in the form of badges and personalized messages. The platform includes analytics to view team performance, a leaderboard to track the top contributors, and a section showcasing the most liked posts.",
   "techs": [
     "ReactJS",
     "NodeJS",
@@ -16,7 +16,7 @@
   {
     "img": "/images/next-blog.png",
     "title": "Next Blog",
-    "desc": "Leveraging the power of NextJS & React for building user interfaces and MongoDB for database management. It also uses gray-matter for parsing front-matter from markdown files, react-markdown for rendering markdown content, and react-syntax-highlighter for syntax highlighting in markdown.",
+    "desc": "Next Blog is a blog management platform built with modern web technologies. It utilizes Next.js and React for creating dynamic interfaces, while MongoDB handles database management. Key features include parsing front-matter from markdown files using gray-matter, rendering markdown content with react-markdown, and syntax highlighting through react-syntax-highlighter. This platform is ideal for developers and content creators seeking an efficient and elegant way to manage blogs.",
     "techs": [
       "NextJS",
       "ReactJS",
@@ -32,7 +32,7 @@
   {
     "img": "/images/next-events.png",
     "title": "Next Events",
-    "desc": "Next Events is a web application that allows users to search for upcoming events in their area. The application allows users to browse events. Users can filter the events based on date and month. The application is built using the Next.js framework. The application is fully responsive and optimized for mobile devices and it is deployed on Vercel.",
+    "desc": "Next Events is a user-friendly platform for discovering upcoming events in your area. Users can browse events, filter them by date or month, and access detailed event information. Built with Next.js, the application is fully responsive, optimized for mobile devices, and deployed on Vercel for reliable performance.",
     "techs": ["NextJS", "ReactJS", "Vanilla JavaScript", "CSS3"],
     "live": "https://next-events-pi-smoky.vercel.app/events",
     "source": "https://github.com/iamsjunaid/next_events"
@@ -40,7 +40,7 @@
   {
     "img": "/images/healthcare-dashboard.png", 
     "title": "Healthcare Dashboard",
-    "desc": "This project involves creating a web application to fetch and display patient data securely, including health metrics such as heart rate, respiratory rate, and blood pressure, specifically for a patient named Jessica Taylor. Utilizing Vite for the build process, the project employs environment variables to securely manage sensitive information like.",
+    "desc": "This web application securely fetches and displays patient health data, including metrics such as heart rate, respiratory rate, and blood pressure. The project features a clean UI and utilizes environment variables to securely manage sensitive information. Built with Vite for an optimized development experience, the dashboard provides an efficient way to monitor patient health in real time.",
     "techs": ["HTML5", "CSS3", "Vanilla JavaScript", "ChartJS", "Adobe XD"],
     "live": "https://healthcare-dashboard.onrender.com/",
     "source": "https://github.com/iamsjunaid/healthcare_dashboard"
@@ -48,7 +48,7 @@
   {
     "img": "/images/doc-talk.png",
     "title": "Doc Talk",
-    "desc": "A trusted health companion, brings the power of informed conversations to your fingertips. Clear and open communication is the key to better healthcare decisions, and that's what Doctalk is all about.",
+    "desc": "Doc Talk is a trusted health companion platform that empowers users to have informed conversations about their health. By focusing on clear communication, Doc Talk helps users to make appointments with doctors. It features a user-friendly design and robust functionality for secure and efficient health data management.",
     "techs": ["Ruby on Rails", "PostgreSQL", "RSpec", "ReactJS", "Tailwind CSS", "Redux", "React Testing Library"],
     "live": "https://doc-talk2.onrender.com/",
     "source": "https://github.com/iamsjunaid/DocTalk-Frontend"
@@ -56,7 +56,7 @@
   {
     "img": "/images/budget-bee.png",
     "title": "Budget Bee",
-    "desc": "Take control of your finances with ease and precision. Create personalized budgets tailored to your lifestyle and financial goals. Seamlessly manage your income and expenses by categorizing transactions, giving you a clear overview of your spending habits.",
+    "desc": "Budget Bee is a personal finance management tool that simplifies budgeting and expense tracking. Users can create customized budgets, categorize transactions, and gain a clear overview of their spending habits. The platform aims to help users take control of their finances with precision and ease.",
     "techs": ["Ruby on Rails", "Tailwind CSS", "PostgreSQL", "Rspec"],
     "live": "https://budget-bee.onrender.com/",
     "source": "https://github.com/iamsjunaid/budget-bee"
@@ -64,7 +64,7 @@
   {
     "img": "/images/space-travellers-hub.png",
     "title": "Space Travellers Hub",
-    "desc": "Leveraging real-time data from the SpaceX API, A user-friendly interface ensures seamless navigation, allowing enthusiasts to choose from a variety of rocket options and participate in thrilling space expeditions.",
+    "desc": "Space Travellers Hub is an engaging platform powered by real-time data from the SpaceX API. Users can explore various rocket options, book thrilling space expeditions, and enjoy a user-friendly interface designed for seamless navigation. This project highlights the power of modern web development and interactive design.",
     "techs": ["ReactJS", "Redux", "React Testing Library"],
     "live": "https://space-travelers-hub-dhiu.onrender.com/",
     "source": "https://github.com/iamsjunaid/space-travelers-hub"
@@ -72,7 +72,7 @@
   {
     "img": "/images/mealsdb.png",
     "title": "Meals DB",
-    "desc": "Discover meals tailored to your taste buds and dietary preferences. Engage with the community by liking and commenting on your favorite dishes, sharing your culinary adventures, and learning from fellow food enthusiasts. Want to ensure a seat at the table? Reserve your spot for upcoming events and exclusive chef's specials.",
+    "desc": "Meals DB is an interactive platform for discovering dishes tailored to users’ tastes and preferences. Users can like and comment on their favorite meals, connect with the community, and reserve spots for exclusive culinary events. It offers a unique way to explore and share culinary experiences.",
     "techs": ["HTML", "CSS", "JavaScript-ES6"],
     "live": "https://iamsjunaid.github.io/MealsDB",
     "source": "https://github.com/iamsjunaid/MealsDB"
