@@ -32,15 +32,15 @@ export default function Skills() {
 
 
     return (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 ">
+        <div className="flex flex-wrap justify-center gap-8">
             {skills.map((skill, index) => (
-                <div key={index} className="flex flex-row justify-around items-center ">
-                    <img src={skill.logo} alt={skill.name} className="size-16 mr-4 bg-gray-100 p-4 rounded" />
-                    <div className=' text-left'>
-                        <p className="text-black text-sm ">{skill.name}</p>
-                        <p className="text-gray-500 text-xs ">{skill.info}</p>
-                    </div>
+            <div key={index} className="flex flex-col justify-around items-center flex-wrap ">
+                <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4 bg-gray-100 p-2 rounded" />
+                <div className="text-center">
+                <p className="text-black text-sm">{skill.name}</p>
+                {/* <p className="text-gray-500 text-xs">{skill.info}</p> */}
                 </div>
+            </div>
             ))}
         </div>
     );
