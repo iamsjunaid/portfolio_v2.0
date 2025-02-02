@@ -66,22 +66,23 @@ const ContactForm = () => {
           control={form.control}
           name="email"
           render={({ field }) => (
-            <FormItem>
+            <FormItem >
               <FormLabel>Email</FormLabel>
-              <FormControl>
+              <FormControl className="rounded">
                 <Input placeholder="Enter your email here" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
           )}
+          
         />
         <FormField
           control={form.control}
           name="name"
           render={({ field }) => (
-            <FormItem>
+            <FormItem >
               <FormLabel>Name</FormLabel>
-              <FormControl>
+              <FormControl className="rounded">
                 <Input placeholder="Enter your name here" {...field} />
               </FormControl>
               <FormMessage />
@@ -94,7 +95,7 @@ const ContactForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Message</FormLabel>
-              <FormControl>
+              <FormControl className="rounded">
                 <textarea
                   {...field}
                   placeholder="Your message"
@@ -109,7 +110,7 @@ const ContactForm = () => {
         <Button
           type="submit"
           disabled={loading}
-          className={`bg-white text-black rounded-full px-12 py-4 hover:text-white hover:border group ${loading ? "opacity-50 cursor-not-allowed" : ""
+          className={`bg-white text-black rounded w-full py-4 hover:text-white hover:border group ${loading ? "opacity-50 cursor-not-allowed" : ""
             }`}
         >
           {loading ? (
