@@ -18,12 +18,12 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed z-50 rounded-3xl backdrop-blur-sm bg-black/60 self-center w-4/5 sm:w-1/4 p-4 text-white mt-4 duration-1000 ease-in-out ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-y-6'}`}>
+        <nav className={`fixed z-50 rounded-3xl backdrop-blur-sm bg-black/60 self-center w-4/5 sm:w-1/3 p-4 text-white mt-4 duration-1000 ease-in-out border border-white ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-y-6'}`}>
             <ul className="flex justify-around items-center gap-4">
                 {navItems.map((item) => (
                     <li key={item.id}>
                         <Tooltip text={item.name}>
-                            <a href={`#${item.name.toLowerCase()}`} className="sm:size-8" aria-describedby='tooltip-id'>
+                            <a href={`#${item.name.toLowerCase()}`}  aria-describedby='tooltip-id' className='hover:text-primaryColor'>
                                 {item.icon}
                             </a>
                         </Tooltip>

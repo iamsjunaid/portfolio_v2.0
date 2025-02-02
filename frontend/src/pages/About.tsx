@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 import { ArrowUpRight } from "lucide-react"
 
-import SkillsChart from "@/components/SkillsChart"
+import SkillsChart from "@/components/Skills"
 
 import { Button } from "@/components/ui/button"
 
@@ -14,10 +14,10 @@ const About = () => {
     }, []);
 
     return (
-        <section className="my-16 sm:h-screen h-auto w-full">
+        <section className="w-full bg-white">
 
-            <div className="flex flex-col py-8 sm:flex-row gap-8 items-start justify-center sm:items-center bg-black px-2">
-                <p className="text-2xl sm:text-4xl text-white">
+            <div className="flex flex-col py-8 sm:flex-row gap-8 items-start justify-center sm:items-center bg-black px-4">
+                <p className="text-xl sm:text-4xl text-white">
                     Let's collaborate to turn your vision into a digital reality!
                 </p>
                 <Button asChild className="bg-gray-300 text-black rounded-full px-8 py-2 sm:px-12 sm:py-6 hover:text-white hover:border hover:border-white-950 transition-transform duration-300 ease-in-out text-sm">
@@ -28,8 +28,8 @@ const About = () => {
                 </Button>
             </div>
 
-            <div className={`mx-6 sm:mx-16 flex flex-col justify-between items-baseline ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`} id="about">
-                <div className="w-full">
+            <div className={`mx-6 sm:mx-16 my-8 flex flex-col justify-between items-baseline  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`} id="about">
+                <div className="">
                     <SkillsChart />
                 </div>
             </div>

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 
 import projects from '../lib/projects.json';
 import { Project } from '../lib/types';
 import ProjectCard from '@/components/ProjectCard';
+import { ArrowUpRight } from 'lucide-react';
+
 
 const Work = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -26,25 +27,29 @@ const Work = () => {
       {projects.map((project: Project) => (
         <div
           key={project.title}
-          className="flex flex-col items-center p-4"
-        >
-          <div className="relative group overflow-hidden rounded-xl bg-slate-300 p-4 sm:px-16 w-full h-full">
-            {/* Project Image */}
-            <img
-              src={project.img}
-              alt={project.title}
-              className="w-full h-64 object-cover rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-105 group-hover:brightness-50"
-            />
+          className="flex flex-col gap-2 justify-between items-center p-4 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-600 ease-in-out cursor-pointer bg-white"
 
-            {/* Hover Button */}
-            <div
-              className="absolute bottom-4 left-4 flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer hover:bg-white hover:text-gray-900"
-              onClick={() => handleButtonClick(project)}
-            >
-              <ArrowRight className="w-6 h-6" />
-            </div>
+        >
+          <img
+            src={project.img}
+            alt={project.title}
+            className="w-full"
+          />
+
+          <div className="mx-2">
+            <div className="font-bold text-xl mb-2">{project.title}</div>
+            <p className="text-gray-700 text-base ">
+              {project.desc.split(' ').slice(0, 20).join(' ')}...
+            </p>
           </div>
-          <h2 className="text-xl mt-4">{project.title}</h2>
+
+          <div className='button-container flex flex-col items-center gap-4 transition-all duration-300 ease-in-out  bg-black w-full text-white rounded py-1 group'>
+            <button className='button flex items-center justify-between gap-1' onClick={() => handleButtonClick(project)}>
+              <p className='text-sm'>Learn More</p>
+              <ArrowUpRight className='w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45 ' />
+            </button>
+          </div>
+
         </div>
       ))}
     </div>
@@ -52,7 +57,7 @@ const Work = () => {
 
   return (
     <section id='work'
-      className={`transition-opacity duration-1000 ease-in-out mx-auto h-full ${isLoaded ? 'opacity-100' : 'opacity-0'
+      className={`transition-opacity duration-1000 ease-in-out mx-auto pb-8 bg-gray-100 ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
       <p className="text-md text-left ml-8 sm:ml-16 my-12">Tech       <span className='mx-4'>

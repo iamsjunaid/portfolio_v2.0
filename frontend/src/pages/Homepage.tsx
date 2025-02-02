@@ -34,7 +34,7 @@ const Homepage = () => {
                     </span>
                 </h1>
                 <div>
-                    <Button asChild className='bg-gray-900 text-white text-sm sm:text-lg rounded-full px-8 py-2 sm:px-12 sm:py-6 hover:text-gray-950 group'>
+                    <Button asChild className='bg-gray-900 text-white text-sm sm:text-lg rounded px-8 py-2 sm:px-12 sm:py-6 hover:text-gray-950 group'>
                         <a href="#contact" className='flex items-center gap-2'>
                             <span>Connect</span>
                             <ArrowUpRight className='w-12 h-12 transition-transform duration-300 ease-in-out group-hover:rotate-45' />
