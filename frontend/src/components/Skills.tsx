@@ -13,19 +13,19 @@ import AwsIcon from '../assets/icons/aws.png';
 import GitIcon from '../assets/icons/git.png';
 
 const skills = [
-    { name: "React", logo: ReactIcon, info: "A JavaScript library for building user interfaces." },
-    { name: "Redux", logo: ReduxIcon, info: "A predictable state container for JavaScript apps." },
-    { name: "Next", logo: NextIcon, info: "A React framework for server-side rendering and static site generation." },
-    { name: "Tailwind CSS", logo: TailwindIcon, info: "A utility-first CSS framework for rapid UI development." },
-    { name: "TypeScript", logo: TypeScriptIcon, info: "A typed superset of JavaScript that compiles to plain JavaScript." },
-    { name: "Node.js", logo: NodeIcon, info: "A JavaScript runtime built on Chrome's V8 JavaScript engine." },
-    { name: "Ruby on Rails", logo: RorIcon, info: "A server-side web application framework written in Ruby." },
-    { name: "PostgreSQL", logo: PostgresIcon, info: "A powerful, open-source object-relational database system." },
-    { name: "MongoDB", logo: MongoIcon, info: "A document-oriented NoSQL database used for high volume data storage." },
-    { name: "Docker", logo: DockerIcon, info: "A platform for developing, shipping, and running applications in containers." },
-    { name: "Kubernetes", logo: K8sIcon, info: "An open-source system for automating deployment, scaling, and management of containerized applications." },
-    { name: "AWS", logo: AwsIcon, info: "Amazon Web Services, a comprehensive cloud computing platform." },
-    { name: "Git", logo: GitIcon, info: "A distributed version control system for tracking changes in source code during software development." },
+    { name: "React", logo: ReactIcon },
+    { name: "Redux", logo: ReduxIcon },
+    { name: "Next", logo: NextIcon },
+    { name: "Tailwind CSS", logo: TailwindIcon },
+    { name: "TypeScript", logo: TypeScriptIcon },
+    { name: "Node.js", logo: NodeIcon },
+    { name: "Ruby on Rails", logo: RorIcon },
+    { name: "PostgreSQL", logo: PostgresIcon },
+    { name: "MongoDB", logo: MongoIcon },
+    { name: "Docker", logo: DockerIcon },
+    { name: "Kubernetes", logo: K8sIcon },
+    { name: "AWS", logo: AwsIcon },
+    { name: "Git", logo: GitIcon },
 ];
 
 export default function Skills() {
@@ -34,13 +34,12 @@ export default function Skills() {
     return (
         <div className="flex flex-wrap justify-center gap-8">
             {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col justify-around items-center flex-wrap ">
-                <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4 bg-gray-100 p-2 rounded" />
-                <div className="text-center">
-                <p className="text-black text-sm">{skill.name}</p>
-                {/* <p className="text-gray-500 text-xs">{skill.info}</p> */}
+                <div key={index} className="flex flex-col justify-around items-center flex-wrap ">
+                    <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4 bg-gray-100 p-2 rounded" />
+                    <div className="text-center">
+                        <p className="text-black text-sm">{skill.name}</p>
+                    </div>
                 </div>
-            </div>
             ))}
         </div>
     );

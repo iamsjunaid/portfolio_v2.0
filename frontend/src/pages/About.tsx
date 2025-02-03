@@ -20,7 +20,7 @@ const About = () => {
                 <p className="text-xl sm:text-4xl text-white">
                     Let's collaborate to turn your vision into a digital reality!
                 </p>
-                <Button asChild className="bg-gray-300 text-black rounded-full px-8 py-2 sm:px-12 sm:py-6 hover:text-white hover:border hover:border-white-950 transition-transform duration-300 ease-in-out text-sm">
+                <Button asChild className="bg-gray-300 text-black rounded px-8 py-2 sm:px-12 sm:py-6 hover:text-white hover:border hover:border-white-950 transition-transform duration-300 ease-in-out text-sm">
                     <a href="https://drive.google.com/file/d/1cZ7ykcpj5RER1zL_0XpxJXOqekF6h6tu/view?usp=sharing" className="flex items-center gap-2 group" target="_blank">
                         <span>My Resume</span>
                         <ArrowUpRight className="w-12 h-12 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
@@ -29,9 +29,7 @@ const About = () => {
             </div>
 
             <div className={`mx-6 sm:mx-16 my-8 flex flex-col justify-between items-baseline  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`} id="about">
-                <div className="">
-                    <SkillsChart />
-                </div>
+                <SkillsChart />
             </div>
 
         </section>
