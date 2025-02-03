@@ -12,33 +12,33 @@ const ContactPage = () => {
 
         <ContactForm />
         <div className="flex justify-around mt-8 w-full sm:w-3/4 sm:px-16">
-          <ul className="flex flex-col gap-2">
-            <li>
+          <ul className="flex flex-col gap-2 ">
+            <li className="text-left">
               <Button variant="link" asChild>
-                <a href="#home" className="text-xl" >Home</a>
+                <a href="#home" className="sm:text-xl" >Home</a>
               </Button>
             </li>
-            <li>
+            <li className="text-left">
               <Button variant="link" asChild>
-                <a href="#projects" className="text-xl" >Work</a>
+                <a href="#projects" className="sm:text-xl" >Work</a>
               </Button>
             </li>
-            <li>
+            <li className="text-left">
               <Button variant="link" asChild>
-                <a href="#about" className="text-xl" >About</a>
+                <a href="#about" className="sm:text-xl" >About</a>
               </Button>
             </li>
           </ul>
 
 
           <ul className="flex flex-col gap-2">
-            <li className="flex items-center gap-2  group">
-              <Button variant="link" ><a className="text-xl"  href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
+            <li className="flex items-center group">
+              <Button variant="link" ><a className="sm:text-xl"  href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
               </Button>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
-            <li className="flex items-center gap-2  group">
-              <Button variant="link"><a className="text-xl"  href="https://github.com/iamsjunaid">GitHub</a></Button>
+            <li className="flex items-center group">
+              <Button variant="link"><a className="sm:text-xl"  href="https://github.com/iamsjunaid">GitHub</a></Button>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
           </ul>
