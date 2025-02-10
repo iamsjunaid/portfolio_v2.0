@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button'
 
 import { ArrowUpRight } from 'lucide-react';
+import { BriefcaseBusiness } from 'lucide-react';
 
 import landingPortfolio from '@/assets/landing-portfolio.png';
 
@@ -27,11 +28,21 @@ const Homepage = () => {
                     </span>
                     Summary
                 </p>
-                <h1 className="text-2xl sm:text-4xl">Hi, I'm Junaid. Glad to see you!<br />
-                    <span className="text-gray-400">
-                        Ready to bring ideas to life from conception to deployment.
-                    </span>
-                </h1>
+
+
+                <div className='flex flex-col gap-4'>
+                    <div className='flex justify-around items-center text-xs rounded-full border border-green-800 px-2 py-2 text-green-800 bg-green-100 w-40'>
+                        <iframe src="https://lottie.host/embed/f189c3e9-94d5-4741-9893-47ff684a6d10/7jTXtG7qAs.lottie" className='size-4'></iframe>
+                        <BriefcaseBusiness className='w-4 h-4' />
+                        <p>Available for hire</p>
+                    </div>
+
+                    <h1 className="text-2xl sm:text-4xl">Hi, I'm Junaid. Glad to see you!<br />
+                        <span className="text-gray-400">
+                            Ready to bring ideas to life from conception to deployment.
+                        </span>
+                    </h1>
+                </div>
                 <div>
                     <Button asChild className='bg-gray-900 text-white text-sm sm:text-lg rounded px-8 py-2 sm:px-12 sm:py-6 hover:text-gray-950 group'>
                         <a href="#contact" className='flex items-center gap-2'>

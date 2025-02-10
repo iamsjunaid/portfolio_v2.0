@@ -14,6 +14,7 @@ export interface Experience {
   companyURL: string;
   location: string;
   description: string;
+  skills: string[];
 }
 
 export interface ProjectCardProps {
