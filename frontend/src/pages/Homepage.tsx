@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 import { ArrowUpRight } from 'lucide-react';
 
-import heroProfile from '@/assets/hero-profile.png';
+import landingPortfolio from '@/assets/landing-portfolio.png';
 
 const Homepage = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -17,8 +17,7 @@ const Homepage = () => {
     return (
         <section className={`mx-6 sm:mx-16 py-8 sm:flex items-center justify-between duration-1000 ease-in-out my-4 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`} id='home'>
             <div className='text-center w-full'>
-                <img src={heroProfile} alt="Hero" className="size-4/5 contrast-200  mx-auto" />
-                {/* <img src={heroMain} alt="Hero" className="absolute top-16 right-32 size-64" /> */}
+                <img src={landingPortfolio} alt="Hero" className="size-4/5 mx-auto" />
             </div>
             <div className='flex flex-col gap-12 sm:gap-24 w-full text-left'>
                 <p className="text-md text-left">
