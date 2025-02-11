@@ -20,7 +20,7 @@ const Homepage = () => {
             <div className='text-center w-full'>
                 <img src={landingPortfolio} alt="Hero" className="size-4/5 mx-auto" />
             </div>
-            <div className='flex flex-col gap-12 sm:gap-24 w-full text-left'>
+            <div className='flex flex-col gap-4 sm:gap-24 w-full text-left'>
                 <p className="text-md text-left">
                     Home
                     <span className='mx-4'>
