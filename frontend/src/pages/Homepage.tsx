@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 
-import { Button } from '@/components/ui/button'
-
 import { ArrowUpRight } from 'lucide-react';
 import { BriefcaseBusiness } from 'lucide-react';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import { Button } from '@/components/ui/button'
 
 import landingPortfolio from '@/assets/landing-portfolio.png';
 
@@ -16,9 +19,15 @@ const Homepage = () => {
     }, []);
 
     return (
-        <section className={`mx-6 sm:mx-16 py-8 sm:flex items-center justify-between duration-1000 ease-in-out my-4 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`} id='home'>
+        <section className={`sm:h-screen mx-6 sm:mx-16 py-8 sm:flex items-center justify-between duration-1000 ease-in-out my-4 ${isLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-6'}`} id='home'>
             <div className='text-center w-full'>
-                <img src={landingPortfolio} alt="Hero" className="size-4/5 mx-auto" />
+                <LazyLoadImage
+                    src={landingPortfolio}
+                    alt="Hero"
+                    effect="blur"
+                    width="80%"
+                    height="auto"
+                />
             </div>
             <div className='flex flex-col gap-8 sm:gap-16 w-full text-left'>
                 <p className="text-md text-left">

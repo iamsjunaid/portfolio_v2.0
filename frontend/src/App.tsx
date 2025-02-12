@@ -7,6 +7,7 @@ import Experience from './pages/Experience';
 import { useEffect, useState } from 'react';
 import './App.css';
 import Spinner from './components/Spinner';
+import ArticlesList from './pages/ArticlesList';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -30,6 +31,7 @@ function App() {
           <Experience />
           <Work />
           <About />
+          <ArticlesList />
           <ContactPage />
         </>
       )}

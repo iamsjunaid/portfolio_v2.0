@@ -16,8 +16,8 @@ const About = () => {
     return (
         <section className="w-full bg-white">
 
-            <div className="flex flex-col py-8 sm:flex-row gap-8 items-start justify-center sm:items-center bg-black px-4">
-                <p className="text-xl sm:text-4xl text-white">
+            <div className="flex flex-col py-8 sm:flex-row gap-8 items-start justify-around sm:items-center bg-black px-4">
+                <p className="text-xl sm:text-2xl text-white">
                     Let's collaborate to turn your vision into a digital reality!
                 </p>
                 <Button asChild className="bg-gray-300 text-black rounded px-8 py-2 sm:px-12 sm:py-6 hover:text-white hover:border hover:border-white-950 transition-transform duration-300 ease-in-out text-sm">

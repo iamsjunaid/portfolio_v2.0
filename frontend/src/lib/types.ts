@@ -17,6 +17,13 @@ export interface Experience {
   skills: string[];
 }
 
+export interface ArticleType {
+  title: string;
+  content: string;
+  url: string;
+  tags: string[];
+}
+
 export interface ProjectCardProps {
   selectedProject: Project;
   closeModal: () => void;
