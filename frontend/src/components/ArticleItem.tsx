@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 const ArticleItem = ({ article }: { article: ArticleType }) => {
     return (
-        <div className="flex flex-col bg-white shadow-lg rounded p-4 w-[36rem] gap-2">
+        <div className="flex flex-col bg-white shadow-lg rounded p-4 w-[24rem] gap-2">
             <div className="flex justify-around items-start">
                 <div className="flex flex-col gap-2 ">
                     <h2 className="font-semibold text-sm">{article.title}</h2>
@@ -22,7 +22,7 @@ const ArticleItem = ({ article }: { article: ArticleType }) => {
                     </Tooltip>
                 </div>
             </div>
-            <div className="flex justify-start gap-2 items-center w-full">
+            <div className="flex justify-start gap-2 items-center w-full flex-wrap">
                 {article.tags.map((tag, index) => {
                     return (
                         <div className="flex justify-around items-center gap-2 bg-gray-600 text-white p-1 rounded" key={index}>

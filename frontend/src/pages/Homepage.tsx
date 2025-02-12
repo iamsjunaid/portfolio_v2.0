@@ -27,6 +27,7 @@ const Homepage = () => {
                     effect="blur"
                     width="80%"
                     height="auto"
+                    className='mx-auto'
                 />
             </div>
             <div className='flex flex-col gap-8 sm:gap-16 w-full text-left'>

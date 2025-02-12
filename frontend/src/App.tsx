@@ -22,7 +22,7 @@ function App() {
     <div className='flex flex-col bg-gray-100'>
       <Navbar />
       {loading ? (
-        <div className="flex justify-center items-center h-screen">
+        <div className="flex justify-center items-center sm:h-screen">
           <Spinner />
         </div>
       ) : (
