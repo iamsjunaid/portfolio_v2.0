@@ -1,19 +1,5 @@
 [  
   {
-  "img": "/images/kudospot.png",
-  "title": "Kudospot",
-  "desc": "Kudospot is a platform designed to foster team collaboration and appreciation. It allows team members to send and receive kudos in the form of badges and personalized messages. The platform includes analytics to view team performance, a leaderboard to track the top contributors, and a section showcasing the most liked posts.",
-  "techs": [
-    "ReactJS",
-    "NodeJS",
-    "MongoDB",
-    "ChartJS",
-    "Tailwind CSS"
-  ],
-  "live": "https://kudospot-ten.vercel.app/",
-  "source": "https://github.com/iamsjunaid/kudospot"
-  }, 
-  {
     "img": "/images/next-blog.png",
     "title": "Next Blog",
     "desc": "Next Blog is a blog management platform built with modern web technologies. It utilizes Next.js and React for creating dynamic interfaces, while MongoDB handles database management. Key features include parsing front-matter from markdown files using gray-matter, rendering markdown content with react-markdown, and syntax highlighting through react-syntax-highlighter. This platform is ideal for developers and content creators seeking an efficient and elegant way to manage blogs.",

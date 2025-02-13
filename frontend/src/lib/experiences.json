@@ -1,7 +1,7 @@
 [
   {
     "role": "Full Stack Developer",
-    "duration": "Mar 24 - June 24",
+    "duration": "Feb 24 - June 24",
     "company": "Explorator Labs",
     "companyURL": "https://exploratorlabs.com/",
     "location": "Ontario, Canada (Remote)",
@@ -19,7 +19,7 @@
   },
   {
     "role": "Mentor | Code Reviewer",
-    "duration": "Apr 23 - Dec 23",
+    "duration": "Feb 23 - Dec 23",
     "company": "Microverse",
     "companyURL": "https://www.microverse.org/",
     "location": "California, USA (Remote)",
@@ -42,6 +42,7 @@
       "No-Code Development",
       "HTML",
       "CSS",
+      "Javascript",
       "Agile Development"
     ]
   }
