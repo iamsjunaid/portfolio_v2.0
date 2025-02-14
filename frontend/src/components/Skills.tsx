@@ -36,12 +36,12 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className="grid grid-cols-4 gap-4 sm:gap-8 sm:grid-cols-8 w-full">
+        <div className="grid grid-cols-4 gap-4 sm:gap-8 sm:grid-cols-8 w-3/4">
             {skills.map((skill, index) => (
                 <div key={index} className="flex flex-col justify-around items-center flex-wrap ">
-                    <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4 bg-gray-100 p-2 rounded" />
+                    <img src={skill.logo} alt={skill.name} className="size-12 mb-4 bg-gray-100 p-2 rounded" />
                     <div className="text-center">
-                        <p className="text-black text-sm">{skill.name}</p>
+                        <p className="text-black text-xs">{skill.name}</p>
                     </div>
                 </div>
             ))}

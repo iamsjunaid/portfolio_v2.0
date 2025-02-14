@@ -6,6 +6,8 @@ import SkillsChart from "@/components/Skills"
 
 import { Button } from "@/components/ui/button"
 
+import AboutMe from "@/components/AboutMe"
+
 const About = () => {
     const [loaded, setLoaded] = useState(false);
 
@@ -28,8 +30,9 @@ const About = () => {
                 </Button>
             </div>
 
-            <div className={`mx-6 sm:mx-16 my-8 flex flex-col justify-between items-baseline  ${loaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'} duration-1000 ease-in-out`} id="about">
+            <div className="flex justify-around items-center p-8" id="about">
                 <SkillsChart />
+                <AboutMe />
             </div>
 
         </section>

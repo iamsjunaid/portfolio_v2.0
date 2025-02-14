@@ -68,7 +68,7 @@ const ContactForm = () => {
           render={({ field }) => (
             <FormItem >
               <FormLabel>Email</FormLabel>
-              <FormControl className="rounded">
+              <FormControl className="rounded text-xs">
                 <Input placeholder="Enter your email here" {...field} />
               </FormControl>
               <FormMessage />
@@ -82,7 +82,7 @@ const ContactForm = () => {
           render={({ field }) => (
             <FormItem >
               <FormLabel>Name</FormLabel>
-              <FormControl className="rounded">
+              <FormControl className="rounded text-xs">
                 <Input placeholder="Enter your name here" {...field} />
               </FormControl>
               <FormMessage />
@@ -99,7 +99,7 @@ const ContactForm = () => {
                 <textarea
                   {...field}
                   placeholder="Your message"
-                  className="w-full h-32 p-4 border rounded bg-black"
+                  className="w-full h-32 p-4 border rounded bg-black text-sm"
                 />
               </FormControl>
               <FormMessage />

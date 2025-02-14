@@ -32,10 +32,6 @@ const Homepage = () => {
             </div>
             <div className='flex flex-col gap-8 sm:gap-16 w-full text-left'>
                 <p className="text-md text-left">
-                    Home
-                    <span className='mx-4'>
-                        ·
-                    </span>
                     Summary
                 </p>
 
