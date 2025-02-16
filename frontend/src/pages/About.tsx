@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react"
-
 import { ArrowUpRight } from "lucide-react"
 
 import SkillsChart from "@/components/Skills"
@@ -9,11 +7,6 @@ import { Button } from "@/components/ui/button"
 import AboutMe from "@/components/AboutMe"
 
 const About = () => {
-    const [loaded, setLoaded] = useState(false);
-
-    useEffect(() => {
-        setLoaded(true);
-    }, []);
 
     return (
         <section className="w-full bg-white">
