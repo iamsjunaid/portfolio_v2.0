@@ -4,8 +4,6 @@ import SkillsChart from "@/components/Skills"
 
 import { Button } from "@/components/ui/button"
 
-//import AboutMe from "@/components/AboutMe"
-
 const About = () => {
 
     return (
@@ -25,7 +23,6 @@ const About = () => {
 
             <div className="flex justify-around items-center p-8" id="about">
                 <SkillsChart />
-                <AboutMe />
             </div>
 
         </section>
