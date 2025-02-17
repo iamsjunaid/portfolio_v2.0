@@ -4,7 +4,7 @@ import SkillsChart from "@/components/Skills"
 
 import { Button } from "@/components/ui/button"
 
-import AboutMe from "@/components/AboutMe"
+//import AboutMe from "@/components/AboutMe"
 
 const About = () => {
 
