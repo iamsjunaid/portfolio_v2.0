@@ -60,9 +60,7 @@ const Work = () => {
       className={`transition-opacity duration-1000 ease-in-out mx-auto pb-8 bg-gray-100 ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
-      <p className="text-md text-left ml-8 sm:ml-16 my-12">Tech       <span className='mx-4'>
-        ·
-      </span>Projects</p>
+      <p className="text-md text-left ml-8 my-12">Projects</p>
       {projectList}
 
       {/* Popup Modal */}

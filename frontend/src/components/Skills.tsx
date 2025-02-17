@@ -11,33 +11,37 @@ import DockerIcon from '../assets/icons/docker.png';
 import K8sIcon from '../assets/icons/k8s.png';
 import AwsIcon from '../assets/icons/aws.png';
 import GitIcon from '../assets/icons/git.png';
+import Js from '../assets/icons/js.png';
+import figma from '../assets/icons/figma.png';
+import graphql from '../assets/icons/graphql.png';
 
 const skills = [
     { name: "React", logo: ReactIcon },
     { name: "Redux", logo: ReduxIcon },
     { name: "Next", logo: NextIcon },
     { name: "Tailwind CSS", logo: TailwindIcon },
+    { name: "JavaScript", logo: Js },
     { name: "TypeScript", logo: TypeScriptIcon },
     { name: "Node.js", logo: NodeIcon },
     { name: "Ruby on Rails", logo: RorIcon },
     { name: "PostgreSQL", logo: PostgresIcon },
     { name: "MongoDB", logo: MongoIcon },
+    { name: "Git", logo: GitIcon },
+    { name: "Figma", logo: figma },
+    { name: "GraphQL", logo: graphql },
     { name: "Docker", logo: DockerIcon },
     { name: "Kubernetes", logo: K8sIcon },
     { name: "AWS", logo: AwsIcon },
-    { name: "Git", logo: GitIcon },
 ];
 
 export default function Skills() {
-
-
     return (
-        <div className="flex flex-wrap justify-center gap-8">
+        <div className="grid grid-cols-4 gap-4 sm:gap-8 sm:grid-cols-8 w-3/4">
             {skills.map((skill, index) => (
                 <div key={index} className="flex flex-col justify-around items-center flex-wrap ">
-                    <img src={skill.logo} alt={skill.name} className="w-16 h-16 mb-4 bg-gray-100 p-2 rounded" />
+                    <img src={skill.logo} alt={skill.name} className="size-12 mb-4 bg-gray-100 p-2 rounded" />
                     <div className="text-center">
-                        <p className="text-black text-sm">{skill.name}</p>
+                        <p className="text-black text-xs">{skill.name}</p>
                     </div>
                 </div>
             ))}
