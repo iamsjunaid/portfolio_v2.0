@@ -2,6 +2,8 @@ import { X } from 'lucide-react';
 import { Github } from 'lucide-react';
 import { Rocket } from 'lucide-react';
 
+import Tooltip from "./Tooltip";
+
 import { ProjectCardProps } from "@/lib/types"
 
 const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
@@ -13,8 +15,13 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
                     <div className='flex gap-2 items-center'>
 
                         <h2 className='text-xl font-semibold'>{selectedProject.title}</h2>
-                        <a className='p-1 hover:bg-gray-100 cursor-pointer rounded hover:text-primaryColor' href={selectedProject.source} target='_blank' rel='noopener noreferrer'><Github className='size-5' /></a>
-                        <a className='p-1 hover:text-primaryColor hover:bg-gray-100 cursor-pointer rounded' href={selectedProject.source} target='_blank' rel='noopener noreferrer'><Rocket className='size-5' target='_blank' /></a>
+                        <Tooltip text='Source'>
+                            <a href={selectedProject.source} target='_blank' rel='noopener noreferrer'><Github className='size-7 p-1 hover:bg-gray-100 cursor-pointer rounded hover:text-primaryColor' /></a>
+                        </Tooltip>
+
+                        <Tooltip text='Live'>
+                            <a href={selectedProject.live} target='_blank' rel='noopener noreferrer'><Rocket className='size-7 p-1 hover:bg-gray-100 cursor-pointer rounded hover:text-primaryColor' /></a>
+                        </Tooltip>
                     </div>
                     <div>
                         <X
