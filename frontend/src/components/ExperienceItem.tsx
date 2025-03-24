@@ -1,13 +1,10 @@
-import { ArrowUpRight } from 'lucide-react';
-
 import { Experience } from '@/lib/types';
 
 
 const ExperienceItem = ({ exp, index }: { exp: Experience, index: number }) => {
-    console.log(index);
 
     return (
-        <a className='flex items-center justify-around hover:bg-gray-700 rounded-xl sm:px-4 group py-2 w-full' href={exp.companyURL} target='_blank'>
+        <div className='flex items-center justify-around hover:bg-gray-700 rounded-xl sm:px-4 group py-2 w-full'>
 
             <div key={index} className='flex flex-col gap-4 w-11/12'>
                 <div className='flex justify-between'>
@@ -21,9 +18,16 @@ const ExperienceItem = ({ exp, index }: { exp: Experience, index: number }) => {
                 </div>
 
                 <p className='mb-4 text-sm'>{exp.description}</p>
+            
+                <div className='flex flex-wrap gap-2'>
+                    {exp.skills.map((skill, i) => (
+                        <div key={i} className='text-xs rounded-full border border-white px-2 py-1 text-white'>
+                            <p>{skill}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className='hidden w-1/4 sm:flex flex-col'><ArrowUpRight className='self-center w-16 h-16 transition-transform duration-300 ease-in-out group-hover:rotate-45' /></div>
-        </a>
+        </div>
     )
 }
 

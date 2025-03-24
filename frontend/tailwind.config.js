@@ -51,7 +51,7 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			},
 			primaryColor: '#FF6400',
-			secondaryColor: '#98FFFF'
+			secondaryColor: '#FEEFE5'
   		},
   	}
   },

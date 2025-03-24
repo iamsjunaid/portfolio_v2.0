@@ -1,26 +1,49 @@
 [
   {
     "role": "Full Stack Developer",
-    "duration": "Mar 24 - June 24",
+    "duration": "Feb 24 - June 24",
     "company": "Explorator Labs",
     "companyURL": "https://exploratorlabs.com/",
     "location": "Ontario, Canada (Remote)",
-    "description": "Enhanced software with Ruby on Rails and ReactJS, reducing downtime by 30%. Delivered full-stack features on tight deadlines. Improved code quality and user experience, reducing bugs by 20%. Skills: ReactJS, Ruby on Rails, PostgreSQL, Cypress, HTML, CSS, GitHub, CI/CD."
-},
-{
+    "description": "Enhanced software with Ruby on Rails and ReactJS, reducing downtime by 30%. Delivered full-stack features on tight deadlines. Improved code quality and user experience, reducing bugs by 20%.",
+    "skills": [
+      "ReactJS",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Cypress",
+      "HTML",
+      "CSS",
+      "GitHub",
+      "CI/CD"
+    ]
+  },
+  {
     "role": "Mentor | Code Reviewer",
-    "duration": "Apr 23 - Dec 23",
+    "duration": "Feb 23 - Dec 23",
     "company": "Microverse",
     "companyURL": "https://www.microverse.org/",
     "location": "California, USA (Remote)",
-    "description": "Mentored 2 junior developers, reviewed code for consistency and performance, and proposed improvements, boosting efficiency by 15% and achieving 100% retention rate."
-},
-{
+    "description": "Mentored 2 junior developers, reviewed code for consistency and performance, and proposed improvements, boosting efficiency by 15% and achieving 100% retention rate.",
+    "skills":[
+      "Mentoring",
+      "Code Review",
+      "Pair Programming",
+      "Agile Development"
+    ]
+  },
+  {
     "role": "Junior Developer",
     "duration": "July 22 - Dec 22",
     "company": "Wem Apac",
     "companyURL": "https://wem.io/",
     "location": "Pune, India (Remote)",
-    "description": "Developed responsive front-end designs for 3 web apps, ensuring cross-browser compatibility. Optimized load times by 26% through minification and image compression. Collaborated with 5 team members to develop a key feature using agile practices. Skills: No-Code Development, HTML, CSS, Agile Development."
+    "description": "Developed responsive front-end designs for 3 web apps, ensuring cross-browser compatibility. Optimized load times by 26% through minification and image compression. Collaborated with 5 team members to develop a key feature using agile practices.",
+    "skills": [
+      "No-Code Development",
+      "HTML",
+      "CSS",
+      "Javascript",
+      "Agile Development"
+    ]
   }
 ]

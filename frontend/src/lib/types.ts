@@ -14,6 +14,14 @@ export interface Experience {
   companyURL: string;
   location: string;
   description: string;
+  skills: string[];
+}
+
+export interface ArticleType {
+  title: string;
+  content: string;
+  url: string;
+  tags: string[];
 }
 
 export interface ProjectCardProps {
