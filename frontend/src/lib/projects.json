@@ -1,4 +1,17 @@
-[  
+[
+  {
+    "img": "/images/trustco.png",
+    "title": "Trustco.",
+    "desc": "This website is built as an assesment project for Trustco. It is a static website built with HTML, CSS, Vanilla JavaScript and Figma. The website is fully responsive and optimized for mobiles, tablets and desktop. It features a clean and modern design, with a focus on user experience and accessibility.",
+    "techs": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript",
+      "Figma"
+    ],
+    "live": "https://trustco-solo.onrender.com/",
+    "source": "https://github.com/iamsjunaid/trustco-solo"
+  },
   {
     "img": "/images/next-blog.png",
     "title": "Next Blog",
@@ -14,7 +27,7 @@
     ],
     "live": "https://next-blogs-zeta-five.vercel.app/",
     "source": "https://github.com/iamsjunaid/next_blogs"
-  },  
+  },
   {
     "img": "/images/next-events.png",
     "title": "Next Events",
@@ -24,7 +37,7 @@
     "source": "https://github.com/iamsjunaid/next_events"
   },
   {
-    "img": "/images/healthcare-dashboard.png", 
+    "img": "/images/healthcare-dashboard.png",
     "title": "Healthcare Dashboard",
     "desc": "This web application securely fetches and displays patient health data, including metrics such as heart rate, respiratory rate, and blood pressure. The project features a clean UI and utilizes environment variables to securely manage sensitive information. Built with Vite for an optimized development experience, the dashboard provides an efficient way to monitor patient health in real time.",
     "techs": ["HTML5", "CSS3", "Vanilla JavaScript", "ChartJS", "Adobe XD"],
@@ -35,7 +48,15 @@
     "img": "/images/doc-talk.png",
     "title": "Doc Talk",
     "desc": "Doc Talk is a trusted health companion platform that empowers users to have informed conversations about their health. By focusing on clear communication, Doc Talk helps users to make appointments with doctors. It features a user-friendly design and robust functionality for secure and efficient health data management.",
-    "techs": ["Ruby on Rails", "PostgreSQL", "RSpec", "ReactJS", "Tailwind CSS", "Redux", "React Testing Library"],
+    "techs": [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "RSpec",
+      "ReactJS",
+      "Tailwind CSS",
+      "Redux",
+      "React Testing Library"
+    ],
     "live": "https://doc-talk2.onrender.com/",
     "source": "https://github.com/iamsjunaid/DocTalk-Frontend"
   },
