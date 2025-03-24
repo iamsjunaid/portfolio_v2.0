@@ -1,11 +1,29 @@
 [
   {
+    "role": "Freelance Developer",
+    "duration": "Aug 24 - Present",
+    "company": "Upwork",
+    "companyURL": "https://upwork.com/",
+    "location": "Remote",
+    "description": "I am working as a freelance developer for local clients. I am new to this platform and have completed 2 projects so far. I have experience with a wide range of technologies, including React, Ruby on Rails, PostgreSQL, and Cypress. The projects I have worked on have been deployed using CI/CD pipelines, and I have experience working in an agile environment.",
+    "skills": [
+      "ReactJS",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Cypress",
+      "HTML",
+      "CSS",
+      "GitHub",
+      "CI/CD"
+    ]
+  },
+  {
     "role": "Full Stack Developer",
     "duration": "Feb 24 - June 24",
     "company": "Explorator Labs",
     "companyURL": "https://exploratorlabs.com/",
     "location": "Ontario, Canada (Remote)",
-    "description": "Enhanced software with Ruby on Rails and ReactJS, reducing downtime by 30%. Delivered full-stack features on tight deadlines. Improved code quality and user experience, reducing bugs by 20%.",
+    "description": "I have been working as a full stack developer at Explorator Labs, where I have been responsible for developing and maintaining web applications. I have worked on a variety of projects, including a social media platform, a project management tool, and an e-commerce website. I have experience with a wide range of technologies, including React, Ruby on Rails, PostgreSQL, and Cypress. The projects I have worked on have been deployed using CI/CD pipelines, and I have experience working in an agile environment. Unforunately, I have been laid off due to the client's budget constraints despite receiving consistent positive feedback.",
     "skills": [
       "ReactJS",
       "Ruby on Rails",
@@ -23,7 +41,7 @@
     "company": "Microverse",
     "companyURL": "https://www.microverse.org/",
     "location": "California, USA (Remote)",
-    "description": "Mentored 2 junior developers, reviewed code for consistency and performance, and proposed improvements, boosting efficiency by 15% and achieving 100% retention rate.",
+    "description": "Mentored 2 developers, reviewed code for consistency and performance, and proposed improvements, boosting efficiency by 15% and achieving 100% retention rate.",
     "skills":[
       "Mentoring",
       "Code Review",
