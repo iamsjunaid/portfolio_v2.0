@@ -15,6 +15,7 @@ export interface Experience {
   location: string;
   description: string;
   skills: string[];
+  logo: string;
 }
 
 export interface ArticleType {

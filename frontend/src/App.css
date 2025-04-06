@@ -1,0 +1,5 @@
+.section-header {
+    font-weight: bold;
+    border-left: 4px dotted #ff6400;
+    padding-left: 10px;
+}

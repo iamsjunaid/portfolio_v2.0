@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 const ContactPage = () => {
   return (
     <section className="bg-black text-white h-full rounded-tr-[8rem] p-8 sm:p-16" id="contact">
-      <p>Contact</p>
+      <p className="section-header">Contact</p>
       <div className="w-full sm:flex justify-between sm:justify-around my-4">
 
         <ContactForm />

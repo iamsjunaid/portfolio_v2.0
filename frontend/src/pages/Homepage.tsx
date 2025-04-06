@@ -31,10 +31,9 @@ const Homepage = () => {
                 />
             </div>
             <div className='flex flex-col gap-8 sm:gap-16 w-full text-left'>
-                <p className="text-md text-left">
+                <p className="section-header">
                     Summary
                 </p>
-
 
                 <div className='flex flex-col gap-4'>
                     <div className='flex justify-around items-center text-xs rounded-full border border-green-800 px-2 py-2 text-green-800 bg-green-100 w-40'>
