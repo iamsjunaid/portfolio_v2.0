@@ -27,7 +27,7 @@ const Work = () => {
       {projects.map((project: Project) => (
         <div
           key={project.title}
-          className="flex flex-col gap-2 justify-between items-center p-4 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-600 ease-in-out cursor-pointer bg-white"
+          className="flex flex-col gap-2 justify-between items-center p-4 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-600 ease-in-out cursor-pointer bg-white border-primaryColor border outline-2 outline-offset-4"
 
         >
           <img
@@ -38,7 +38,7 @@ const Work = () => {
 
           <div className="mx-2">
             <div className="font-bold text-xl mb-2">{project.title}</div>
-            <p className="text-gray-700 text-base ">
+            <p className="text-gray-700 text-sm ">
               {project.desc.split(' ').slice(0, 20).join(' ')}...
             </p>
           </div>
@@ -60,7 +60,11 @@ const Work = () => {
       className={`transition-opacity duration-1000 ease-in-out mx-auto pb-8 bg-gray-100 ${isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
     >
-      <p className="text-md text-left ml-8 my-12">Projects</p>
+      <p className="section-header sm:ml-8 mt-8">Projects</p>
+      <p className='sm:ml-8 mb-8 text-sm'>
+        Here are some of the projects I have worked on. Click on the "Learn More" button to see more details about each project.
+        <br />
+      </p>
       {projectList}
 
       {/* Popup Modal */}
