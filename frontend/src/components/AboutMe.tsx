@@ -2,7 +2,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const AboutMe = () => {
   return (
-    <div className="w-1/2 p-2 border flex flex-col rounded shadow-md bg-secondaryColor border-primaryColor dotted-bg">
+    <div className="w-full sm:w-1/2 p-2 border flex flex-col rounded shadow-md bg-secondaryColor border-primaryColor dotted-bg mb-4 sm:mb-0">
       <p className="section-header">About Me</p>
       <p className="text-sm">
         A brief overview of my work experience.
