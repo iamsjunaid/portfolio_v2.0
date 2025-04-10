@@ -1,6 +1,5 @@
 import { Experience } from '@/lib/types';
 
-// import FastfoodIcon from '@mui/icons-material/Fastfood';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';

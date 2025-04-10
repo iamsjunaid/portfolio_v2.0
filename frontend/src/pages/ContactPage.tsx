@@ -8,6 +8,9 @@ const ContactPage = () => {
   return (
     <section className="bg-black text-white h-full rounded-tr-[8rem] p-8 sm:p-16" id="contact">
       <p className="section-header">Contact</p>
+      <p className="text-sm">
+        If you have any questions, feedback, or just want to say hi, feel free to reach out to me.<br/> I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+      </p>
       <div className="w-full sm:flex justify-between sm:justify-around my-4">
 
         <ContactForm />
