@@ -10,7 +10,7 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
 
     return (
         <div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50'>
-            <div className='flex flex-col gap-2 bg-white p-6 rounded shadow-lg w-11/12 sm:w-3/4 relative'>
+            <div className='flex flex-col gap-2 bg-white p-6 rounded-xl shadow-lg w-11/12 sm:w-3/4 relative'>
                 <div className='flex justify-between items-center mb-4'>
                     <div className='flex gap-2 items-center'>
 
@@ -36,11 +36,11 @@ const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
                         <img
                             src={selectedProject.img}
                             alt={selectedProject.title}
-                            className='w-4/5 sm:w-full rounded-md mx-auto'
+                            className='w-full rounded-xl mx-auto bg-gray-500 p-2'
                         />
                     </div>
 
-                    <div className='sm:w-1/2'>
+                    <div className='sm:w-1/2 gap-2 flex flex-col justify-center items-start'>
                         <p className='text-sm'>{selectedProject.desc}</p>
                         <div className='flex flex-wrap gap-2 items-center'>
                             {selectedProject.techs.map((tech: string, index: number) => (
