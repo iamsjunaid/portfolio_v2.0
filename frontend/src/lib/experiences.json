@@ -6,7 +6,7 @@
     "logo": "/images/comp-logos/highlighted-projects.png",
     "companyURL": "#",
     "location": "Remote",
-    "description": "I have been working on several personal projects that showcase my skills and expertise in web development. I am learning NextJS, Typescript and containerization using Docker. Built several projects while learning these technologies.",
+    "description": "I have been working on several personal projects that showcase my skills and expertise in web development.Built several projects while learning these technologies. Recently, diving deep into AI and ML, exploring how to integrate these technologies into web applications.",
     "skills": [
       "ReactJS",
       "NextJS",
@@ -26,7 +26,8 @@
     "logo": "/images/comp-logos/expl-labs.png",
     "companyURL": "https://exploratorlabs.com/",
     "location": "ON, CAN",
-    "description": "I have been working as a full stack developer at Explorator Labs, where I have been responsible for developing and maintaining web applications. I have worked on a variety of projects, including a social media platform, a project management tool, and an e-commerce website. I have experience with a wide range of technologies, including React, Ruby on Rails, PostgreSQL, and Cypress. The projects I have worked on have been deployed using CI/CD pipelines, and I have experience working in an agile environment. Unforunately, I have been laid off due to the client's budget constraints despite receiving consistent positive feedback.",
+    "description": 
+      "Worked on a healthcare platform that was used by 200 healthcare workers. Laid off due to client's budget constraints.",
     "skills": [
       "ReactJS",
       "Ruby on Rails",
