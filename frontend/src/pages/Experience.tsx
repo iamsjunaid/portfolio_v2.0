@@ -9,7 +9,7 @@ const itemVariants = {
         y: 0,
         transition: {
             duration: 0.6,
-            ease: [0.42, 0, 0.58, 1], // Cubic Bezier easeOut
+            ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
         },
     },
 };
