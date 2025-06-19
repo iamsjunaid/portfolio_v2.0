@@ -56,7 +56,7 @@
   {
     "img": "/images/doc-talk.png",
     "title": "Doc Talk",
-    "desc": "Doc Talk is a trusted health companion platform that empowers users to have informed conversations about their health. By focusing on clear communication, Doc Talk helps users to make appointments with doctors. It features a user-friendly design and robust functionality for secure and efficient health data management.",
+    "desc": "Doc Talk is a full-stack web application designed to connect patients with doctors. It allows users to book appointments, manage their health records, and communicate with healthcare professionals. The platform features a user-friendly interface and robust backend functionality, making it easy for patients to access medical services online.",
     "techs": [
       "Ruby on Rails",
       "PostgreSQL",
