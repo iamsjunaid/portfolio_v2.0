@@ -1,13 +1,26 @@
 [
-  
   {
-    "img": "/images/trustco.png",
-    "title": "Trustco.",
-    "desc": "This website is built as an assesment project for Trustco. It is a static website built with HTML, CSS, Vanilla JavaScript and Figma. The website is fully responsive and optimized for mobiles, tablets and desktop. It features a clean and modern design, with a focus on user experience and accessibility.",
-    "techs": ["HTML5", "CSS3", "Vanilla JavaScript", "Figma"],
-    "live": "https://trustco-solo.onrender.com/",
-    "source": "https://github.com/iamsjunaid/trustco-solo"
+    "img": "/images/lecture-ai-transcriber.png",
+    "title": "AI-Powered Lecture Transcriber & MCQ Generator",
+    "desc": "A full-stack MERN application that allows users to upload lecture videos (MP4), transcribe them using Whisper, and generate MCQs for each 5-minute segment using AI. The app features drag-and-drop upload, transcription, MCQ generation using local LLMs, and a clean segment-wise UI display. Built with React, Node.js, and Python microservices, it is fully dockerized for local or cloud deployment.",
+    "techs": [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Query",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Python",
+      "Flask",
+      "FastAPI",
+      "Whisper",
+      "Docker"
+    ],
+    "live": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "source": "https://github.com/iamsjunaid/lecture-ai-transcriber"
   },
+
   {
     "img": "/images/next-blog.png",
     "title": "Next Blog",
