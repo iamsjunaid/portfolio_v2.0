@@ -22,7 +22,7 @@ const About = () => {
                 </Button>
             </div>
 
-            <div className="flex sm:flex-row flex-col-reverse justify-around items-center p-8" id="about">
+            <div className="flex sm:flex-row flex-col-reverse justify-around items-center p-8 bg-gray-100" id="about">
                 <SkillsChart />
                 <AboutMe />
             </div>

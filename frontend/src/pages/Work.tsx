@@ -1,11 +1,24 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { ArrowUpRight, X } from 'lucide-react';
 
 import projects from '../lib/projects.json';
 import { Project } from '../lib/types';
-import ProjectCard from '@/components/ProjectCard';
-import { ArrowUpRight, X } from 'lucide-react';
 
+import ProjectCard from '@/components/ProjectCard';
 import { Button } from '@/components/ui/button';
+
+const itemVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: 'easeOut', // Use a supported string value
+    },
+  },
+};
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -30,7 +43,7 @@ const Work = () => {
 
   const projectList = (
     <>
-    {/* Modal */}
+      {/* Modal */}
       {showMore && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 ">
           <div className="bg-gray-100 rounded shadow-lg p-8 sm:max-w-6xl w-5/6 relative h-5/6 overflow-y-auto ">
@@ -44,7 +57,7 @@ const Work = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-              {projects.slice(3,projects.length).map((project: Project) => (
+              {projects.slice(3, projects.length).map((project: Project) => (
                 <div
                   key={project.title}
                   className="flex flex-col gap-2 justify-between items-center p-4 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-600 ease-in-out cursor-pointer bg-white border-primaryColor border outline-2 outline-offset-4"
@@ -76,10 +89,13 @@ const Work = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
         {projects.slice(0, 3).map((project: Project) => (
-          <div
+          <motion.div
             key={project.title}
             className="flex flex-col gap-2 justify-between items-center p-4 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-600 ease-in-out cursor-pointer bg-white border-primaryColor border outline-2 outline-offset-4"
-
+            variants={itemVariants}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.2 }}
           >
             <img
               src={project.img}
@@ -101,7 +117,7 @@ const Work = () => {
               </button>
             </div>
 
-          </div>
+          </motion.div>
         ))}
       </div>
     </>
