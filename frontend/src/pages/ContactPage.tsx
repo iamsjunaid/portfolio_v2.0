@@ -9,7 +9,7 @@ const ContactPage = () => {
     <section className="textured-bg backdrop-blur-3xl text-white h-full rounded-tr-[8rem] p-8 sm:p-16" id="contact">
       <p className="section-header">Contact</p>
       <p className="text-sm">
-        If you have any questions, feedback, or just want to say hi, feel free to reach out to me.<br/> I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+        If you have any questions, feedback, or just want to say hi, feel free to reach out to me.
       </p>
       <div className="w-full sm:flex justify-between sm:justify-around my-4">
 
@@ -36,12 +36,12 @@ const ContactPage = () => {
 
           <ul className="flex flex-col gap-2">
             <li className="flex items-center group">
-              <Button variant="link" ><a className="sm:text-xl"  href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
+              <Button variant="link" ><a className="sm:text-xl" href="https://linkedin.com/in/junaidahmedsyed">LinkedIn</a>
               </Button>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
             <li className="flex items-center group">
-              <Button variant="link"><a className="sm:text-xl"  href="https://github.com/iamsjunaid">GitHub</a></Button>
+              <Button variant="link"><a className="sm:text-xl" href="https://github.com/iamsjunaid">GitHub</a></Button>
               <ArrowUpRight className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45" />
             </li>
           </ul>
