@@ -35,12 +35,12 @@ const ExperienceItem = ({ exp, index }: { exp: Experience, index: number }) => {
 
                             <div key={index} className='flex flex-col gap-2 w-11/12'>
                                 <div className='flex flex-col sm:flex-row justify-between'>
-                                    <p className='text-md font-semibold'>{exp.role}</p>
+                                    <p className='text-sm font-semibold'>{exp.role}</p>
                                     <p className='text-sm'>{exp.duration}</p>
                                 </div>
 
                                 <div>
-                                    <p className='text-md'>{exp.company} ({exp.location})</p>
+                                    <p className='text-sm'>{exp.company} ({exp.location})</p>
                                 </div>
 
                                 <p className='mb-4 text-sm'>{exp.description}</p>
