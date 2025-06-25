@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div className='flex flex-col bg-gray-100'>
+    <div className='animated-bg flex flex-col bg-gray-100 backdrop-blur-3xl'>
       <Navbar />
       {loading ? (
         <div className="flex justify-center items-center sm:h-screen">

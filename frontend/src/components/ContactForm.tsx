@@ -99,7 +99,7 @@ const ContactForm = () => {
                 <textarea
                   {...field}
                   placeholder="Your message"
-                  className="w-full h-32 p-4 border rounded bg-black text-xs"
+                  className="w-full h-32 p-4 border rounded bg-transparent text-xs"
                 />
               </FormControl>
               <FormMessage />
