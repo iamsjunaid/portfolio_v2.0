@@ -33,6 +33,8 @@ const AboutMe = () => {
           I've worked on diverse projects, from
           startups to SaaS tools, always aiming
           to write clean, maintainable code.
+          <br /><br />
+         You can view my resume on <a href="https://drive.google.com/file/d/1eYqS6yPNo8x4Tu23_Bx602pQkEQhyWd0/view?usp=drive_link" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
         </>
       </p>
     </div>
