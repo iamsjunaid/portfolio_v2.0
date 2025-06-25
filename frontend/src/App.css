@@ -4,7 +4,16 @@
   padding-left: 10px;
 }
 
-.dotted-bg {
-
-  background-color: #f5f5f5;
+/* styles.css */
+.animated-bg {
+background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
+.textured-bg {
+background-color: #141414;
+background-image: url("https://www.transparenttextures.com/patterns/project-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
