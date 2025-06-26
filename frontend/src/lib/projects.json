@@ -20,7 +20,14 @@
     "live": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "source": "https://github.com/iamsjunaid/lecture-ai-transcriber"
   },
-
+  {
+    "img": "/images/trustco.png",
+    "title": "Trustco.",
+    "desc": "This website is built as an assessment project for a company. It is a static website built with HTML, CSS, Vanilla JavaScript and Figma. The website is fully responsive and optimized for mobiles, tablets and desktop. It features a clean and modern design, with a focus on user experience and accessibility.",
+    "techs": ["HTML5", "CSS3", "Vanilla JavaScript", "Figma"],
+    "live": "https://trustco-solo.onrender.com/",
+    "source": "https://github.com/iamsjunaid/trustco-solo"
+  },
   {
     "img": "/images/next-blog.png",
     "title": "Next Blog",

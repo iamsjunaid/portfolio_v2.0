@@ -25,7 +25,12 @@ export interface ArticleType {
   tags: string[];
 }
 
-export interface ProjectCardProps {
+export interface ProjectModalProps {
   selectedProject: Project;
   closeModal: () => void;
 }
+
+export type ProjectCardProps = {
+    project: Project; // Replace 'any' with your actual project type/interface
+    onClick: (project:Project) => void;
+};

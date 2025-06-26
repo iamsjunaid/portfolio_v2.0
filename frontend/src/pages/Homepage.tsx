@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { ArrowUpRight } from 'lucide-react';
-import { BriefcaseBusiness } from 'lucide-react';
+import { ArrowUpRight, BriefcaseBusiness } from 'lucide-react';
+
+import { FiGithub, FiLinkedin } from 'react-icons/fi';
+import { FaMedium } from "react-icons/fa";
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -47,9 +49,15 @@ const Homepage = () => {
                             Ready to bring ideas to life from conception to deployment.
                         </span>
                     </h1>
+                    <div className=' w-32 flex justify-between items-start'>
+                        <a href="https://linkedin.com/in/junaidahmedsyed" className="p-2 bg-secondaryColor rounded"><FiLinkedin className="w-4 h-4 text-primaryColor" /></a>
+                        <a href="https://github.com/iamsjunaid" className="p-2 bg-secondaryColor rounded"><FiGithub className="w-4 h-4 text-primaryColor" /></a>
+                        <a href="https://medium.com/@sjunaid626" className="p-2 bg-secondaryColor rounded"><FaMedium className="w-4 h-4 text-primaryColor" /></a>
+                    </div>
                 </div>
+
                 <div>
-                    <Button asChild className='bg-gray-900 text-white text-sm sm:text-lg rounded px-8 py-2 sm:px-12 sm:py-6 hover:text-gray-950 group'>
+                    <Button asChild className='bg-secondaryColor text-sm sm:text-lg px-8 py-2 sm:px-12 sm:py-6 group rounded-xl text-primaryColor border border-primaryColor'>
                         <a href="#contact" className='flex items-center gap-2'>
                             <span>Connect</span>
                             <ArrowUpRight className='w-12 h-12 transition-transform duration-300 ease-in-out group-hover:rotate-45' />

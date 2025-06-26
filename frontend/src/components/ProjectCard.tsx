@@ -1,59 +1,56 @@
-import { X } from 'lucide-react';
-import { Github } from 'lucide-react';
-import { Rocket } from 'lucide-react';
+import React from "react"
+import { easeInOut, motion } from 'framer-motion';
 
-import Tooltip from "./Tooltip";
+import { ArrowUpRight } from 'lucide-react';
 
-import { ProjectCardProps } from "@/lib/types"
+import { ProjectCardProps } from "@/lib/types";
 
-const ProjectCard = ({ selectedProject, closeModal }: ProjectCardProps) => {
+const itemVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 0.2,
+            easeInOut: [0.42, 0, 0.58, 1] as [number, number, number, number],
+        },
+    },
+};
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
 
     return (
-        <div className='fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50'>
-            <div className='flex flex-col gap-2 bg-white p-6 rounded-xl shadow-lg w-11/12 sm:w-3/4 relative'>
-                <div className='flex justify-between items-center mb-4'>
-                    <div className='flex gap-2 items-center'>
+        <motion.div
+            key={project.title}
+            className="bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300 flex flex-col items-start relative"
+            variants={itemVariants}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.2 }}
+        >
+            <div className='w-full h-72 flex flex-col justify-center overflow-hidden rounded-t-lg bg-secondaryColor'>
 
-                        <h2 className='text-xl font-semibold'>{selectedProject.title}</h2>
-                        <Tooltip text='Source'>
-                            <a href={selectedProject.source} target='_blank' rel='noopener noreferrer'><Github className='size-7 p-1 hover:bg-gray-100 cursor-pointer rounded hover:text-primaryColor' /></a>
-                        </Tooltip>
-
-                        <Tooltip text='Live'>
-                            <a href={selectedProject.live} target='_blank' rel='noopener noreferrer'><Rocket className='size-7 p-1 hover:bg-gray-100 cursor-pointer rounded hover:text-primaryColor' /></a>
-                        </Tooltip>
-                    </div>
-                    <div>
-                        <X
-                            className='p-1 hover:bg-gray-100 cursor-pointer rounded size-7 hover:text-primaryColor'
-                            onClick={closeModal}
-                        />
-                    </div>
-                </div>
-
-                <div className='flex flex-col sm:flex-row justify-around items-center sm:items-start gap-4'>
-                    <div className='w-3/4 flex justify-center items-center'>
-                        <img
-                            src={selectedProject.img}
-                            alt={selectedProject.title}
-                            className='w-full rounded-xl mx-auto bg-gray-500 p-2'
-                        />
-                    </div>
-
-                    <div className='sm:w-1/2 gap-2 flex flex-col justify-center items-start'>
-                        <p className='text-sm'>{selectedProject.desc}</p>
-                        <div className='flex flex-wrap gap-2 items-center'>
-                            {selectedProject.techs.map((tech: string, index: number) => (
-                                <span key={index} className='text-xs text-white bg-gray-950 p-1 rounded'>
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                </div>
+                <img
+                    src={project.img}
+                    alt={project.title}
+                    className="w-full mt-4"
+                />
             </div>
-        </div>
+
+            <div className="p-4 h-40">
+                <p className='font-semibold text-sm mb-2'>{project.title}</p>
+                <p className="text-gray-600 text-sm ">
+                    {project.desc.split(' ').slice(0, 20).join(' ')}...
+                </p>
+            </div>
+
+            <div className='button-container flex flex-col items-center gap-4 transition-all duration-300 ease-in-out  bg-gray-200 w-full rounded-t-xl py-2 group absolute bottom-0 left-0'>
+                <button className='button flex items-center justify-between gap-1' onClick={() => onClick(project)}>
+                    <p className='text-sm '>Learn More</p>
+                    <ArrowUpRight className='w-4 h-4 transition-transform duration-300 ease-in-out group-hover:rotate-45 ' />
+                </button>
+            </div>
+
+        </motion.div>
     )
 }
 
