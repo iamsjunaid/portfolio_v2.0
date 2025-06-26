@@ -1,18 +1,18 @@
 import React from "react"
-import { motion } from 'framer-motion';
+import { easeInOut, motion } from 'framer-motion';
 
 import { ArrowUpRight } from 'lucide-react';
 
 import { ProjectCardProps } from "@/lib/types";
 
 const itemVariants = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: -50 },
     visible: {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 0.6,
-            ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
+            duration: 0.2,
+            easeInOut: [0.42, 0, 0.58, 1] as [number, number, number, number],
         },
     },
 };
