@@ -1,12 +1,28 @@
+import { motion } from 'framer-motion';
+
 import { ArrowUpRight } from "lucide-react"
 
 import ContactForm from "@/components/ContactForm"
 
 import { Button } from "@/components/ui/button"
 
+const itemVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 1,
+      ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
+    },
+  },
+};
+
 const ContactPage = () => {
   return (
-    <section className="textured-bg backdrop-blur-3xl text-white h-full rounded-tr-[8rem] p-8 sm:p-16" id="contact">
+    <motion.div variants={itemVariants}
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true, amount: 0.2 }} className="textured-bg backdrop-blur-3xl text-white h-full rounded-t-[4rem] p-8 sm:p-16" id="contact">
       <p className="section-header">Contact</p>
       <p className="text-sm">
         If you have any questions, feedback, or just want to say hi, feel free to reach out to me.
@@ -55,7 +71,7 @@ const ContactPage = () => {
         </p>
       </footer>
 
-    </section>
+    </motion.div>
   )
 }
 

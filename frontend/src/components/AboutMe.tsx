@@ -1,8 +1,25 @@
+import { motion } from 'framer-motion';
+
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+
+const itemVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.42, 0, 0.58, 1] as [number, number, number, number],
+    },
+  },
+};
 
 const AboutMe = () => {
   return (
-    <div className="w-full sm:w-1/3 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
+    <motion.div variants={itemVariants}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.2 }} className="w-full sm:w-1/3 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
       <div className="flex justify-between items-start">
         <div>
 
@@ -34,10 +51,10 @@ const AboutMe = () => {
           startups to SaaS tools, always aiming
           to write clean, maintainable code.
           <br /><br />
-         You can view my resume on <a href="https://drive.google.com/file/d/1eYqS6yPNo8x4Tu23_Bx602pQkEQhyWd0/view?usp=drive_link" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
+          You can view my resume on <a href="https://drive.google.com/file/d/1eYqS6yPNo8x4Tu23_Bx602pQkEQhyWd0/view?usp=drive_link" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
         </>
       </p>
-    </div>
+    </motion.div>
   )
 }
 

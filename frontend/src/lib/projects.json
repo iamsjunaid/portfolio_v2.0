@@ -21,6 +21,20 @@
     "source": "https://github.com/iamsjunaid/lecture-ai-transcriber"
   },
   {
+    "img": "/images/spacex-launch-dashboard.png",
+    "title": "SpaceX Launch Dashboard",
+    "desc": "A modern React + TypeScript dashboard for exploring SpaceX launches, built with Vite and TailwindCSS. Features live SpaceX data, launch filtering, detailed modals, responsive UI, and type-safe codebase.",
+    "techs": [
+      "React.js",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "SpaceX API v4"
+    ],
+    "live": "https://interview-for-junaid-ahmed-syed.vercel.app/",
+    "source": "https://github.com/iamsjunaid/interview-for-junaid-ahmed-syed"
+  },
+  {
     "img": "/images/trustco.png",
     "title": "Trustco.",
     "desc": "This website is built as an assessment project for a company. It is a static website built with HTML, CSS, Vanilla JavaScript and Figma. The website is fully responsive and optimized for mobiles, tablets and desktop. It features a clean and modern design, with a focus on user experience and accessibility.",
@@ -95,7 +109,7 @@
   {
     "img": "/images/mealsdb.png",
     "title": "Meals DB",
-    "desc": "Meals DB is an interactive platform for discovering dishes tailored to users’ tastes and preferences. Users can like and comment on their favorite meals, connect with the community, and reserve spots for exclusive culinary events. It offers a unique way to explore and share culinary experiences.",
+    "desc": "Meals DB is an interactive platform for discovering dishes tailored to users' tastes and preferences. Users can like and comment on their favorite meals, connect with the community, and reserve spots for exclusive culinary events. It offers a unique way to explore and share culinary experiences.",
     "techs": ["HTML", "CSS", "JavaScript-ES6"],
     "live": "https://iamsjunaid.github.io/MealsDB",
     "source": "https://github.com/iamsjunaid/MealsDB"
