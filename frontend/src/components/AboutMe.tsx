@@ -19,7 +19,7 @@ const AboutMe = () => {
     <motion.div variants={itemVariants}
                 initial='hidden'
                 whileInView='visible'
-                viewport={{ once: true, amount: 0.2 }} className="w-full sm:w-1/4 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
+                viewport={{ once: true, amount: 0.2 }} className="w-4/5 sm:w-1/4 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
       <div className="flex justify-between items-start">
         <div>
 

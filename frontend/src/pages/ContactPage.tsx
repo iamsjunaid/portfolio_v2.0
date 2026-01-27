@@ -22,7 +22,7 @@ const ContactPage = () => {
     <motion.div variants={itemVariants}
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: true, amount: 0.2 }} className="textured-bg backdrop-blur-3xl text-white h-full rounded-t-[4rem] p-8 sm:p-16" id="contact">
+      viewport={{ once: true, amount: 0.2 }} className="bg-slate-800 backdrop-blur-3xl text-white h-full rounded-t-[4rem] p-8 sm:p-16" id="contact">
       <p className="section-header">Contact</p>
       <p className="text-sm">
         If you have any questions, feedback, or just want to say hi, feel free to reach out to me.

@@ -16,7 +16,7 @@ const itemVariants = {
 
 const Experience = () => {
     return (
-        <section className='bg-transparent rounded-bl-[8rem] px-4 py-16 sm:p-20 flex flex-col gap-4' id='experience'>
+        <section className='bg-transparent rounded-bl-[8rem] px-4 py-16 flex flex-col gap-4' id='experience'>
             <p className='section-header'>Experience</p>
             <p className='text-gray-700 text-sm'>
                 I have worked on a variety of projects, ranging from web applications to mobile apps. My experience includes working with various technologies and frameworks, and I am always eager to learn new skills and improve my abilities.

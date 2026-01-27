@@ -53,7 +53,7 @@ export default function Skills() {
         <motion.div variants={itemVariants}
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: true, amount: 0.2 }} className='flex flex-col border border-secondaryColor p-2 rounded-xl bg-white'>
+            viewport={{ once: true, amount: 0.2 }} className='w-4/5 flex flex-col border border-secondaryColor p-2 rounded-xl bg-white'>
             <div className='mb-4'>
                 <p className="section-header">Tech-stack</p>
                 <p className='text-sm'>
