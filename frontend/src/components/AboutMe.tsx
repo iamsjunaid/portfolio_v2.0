@@ -19,7 +19,7 @@ const AboutMe = () => {
     <motion.div variants={itemVariants}
                 initial='hidden'
                 whileInView='visible'
-                viewport={{ once: true, amount: 0.2 }} className="w-full sm:w-1/3 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
+                viewport={{ once: true, amount: 0.2 }} className="w-4/5 sm:w-1/4 p-2 border flex flex-col rounded-xl shadow-md bg-white border-primaryColor mb-4 sm:mb-0">
       <div className="flex justify-between items-start">
         <div>
 
@@ -51,7 +51,7 @@ const AboutMe = () => {
           startups to SaaS tools, always aiming
           to write clean, maintainable code.
           <br /><br />
-          You can view my resume on <a href="https://drive.google.com/file/d/1f1XyEVaL94TebnWBslrUFICTV3XnDW1i/view?usp=sharing" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
+          You can view my resume on <a href="https://drive.google.com/file/d/12qJ_SS6IgkXJ0twSFMMPWqXrm9kK2gjN/view?usp=drive_link" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
         </>
       </p>
     </motion.div>
