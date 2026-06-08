@@ -51,7 +51,7 @@ const AboutMe = () => {
           startups to SaaS tools, always aiming
           to write clean, maintainable code.
           <br /><br />
-          You can view my resume on <a href="https://drive.google.com/file/d/1f1XyEVaL94TebnWBslrUFICTV3XnDW1i/view?usp=sharing" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
+          You can view my resume on <a href="https://drive.google.com/file/d/12qJ_SS6IgkXJ0twSFMMPWqXrm9kK2gjN/view?usp=drive_link" className="text-primaryColor p-[2px] bg-secondaryColor underline rounded">Google Docs</a>.Let's connect and build something great together!
         </>
       </p>
     </motion.div>
