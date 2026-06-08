@@ -1,5 +1,19 @@
 [
   {
+    "role": "Software Engineer",
+    "duration": "May 2026 - Present",
+    "company": "HANDSHAKE AI",
+    "logo": "/images/comp-logos/handshake-ai.png",
+    "companyURL": "https://joinhandshake.com",
+    "location": "Remote",
+    "description": "Working as a freelance contributor at Handshake on AI evaluation tasks focused on testing and improving LLM performance. Creating and analyzing challenging prompts/tasks to evaluate AI reasoning, accuracy, and problem-solving capabilities.",
+    "skills": [
+      "AI Evaluation",
+      "Prompt Engineering",
+      "LLM Testing"
+    ]
+  },
+  {
     "role": "Full Stack Developer",
     "duration": "Aug 24 - Present",
     "company": "Highlighted Personal Projects",
